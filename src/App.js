@@ -14,7 +14,7 @@ function App() {
       image: foodorder,
       description: "A basic food order app with functional cart and menu.",
       technology: "[Javascript, React, NodeJS]",
-      link: "www.foodorder.com",
+      link: "react-foods-order.herokuapp.com/",
     },
     {
       title: "Portfolio website",
@@ -22,7 +22,7 @@ function App() {
       description:
         "My personal portolio website to showcase my work history and recent projects.",
       technology: "[Javascript, React, NodeJS]",
-      link: "www.devqui.io",
+      link: "cidrex-quilang.herokuapp.com",
     },
   ]);
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
