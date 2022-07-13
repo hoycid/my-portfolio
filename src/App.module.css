@@ -1,0 +1,324 @@
+.App {
+  color: white;
+  display: block;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.details {
+  font-family: "Courier";
+  text-align: left;
+  font-size: 14px;
+}
+
+.job-title {
+  text-align: center;
+  padding: 23%;
+  font-family: "Mont light";
+  color: white;
+  font-size: 5vw;
+  margin: 0;
+}
+
+.job-title h1 {
+  font-size: 5.5vw;
+  display: inline;
+  font-family: "Mont";
+}
+
+.about {
+  font-family: "Courier";
+  text-align: justify;
+  font-size: 13px;
+  margin-bottom: 7vw;
+  margin-left: 25%;
+  margin-right: 25%;
+  line-height: 25px;
+}
+
+.content {
+  border: 0;
+  border-left: 1px;
+  border-style: solid;
+  border-color: white;
+  padding-left: 15px;
+  margin-left: 15px;
+}
+
+.highlight {
+  text-align: center;
+  font-style: none;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-family: "Mont light";
+  line-height: 17px;
+}
+
+.projects {
+  text-align: left;
+  margin-bottom: 7vw;
+}
+
+.projects-viewer {
+  display: flex;
+}
+
+.projects-list {
+  margin-right: 5%;
+  display: grid;
+}
+
+.projects-list li {
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  cursor: pointer;
+  margin: 10px 10px 0px 0px;
+}
+
+.projects-list .li--active {
+  background-color: white;
+  color: black;
+}
+
+.projects-list li:hover {
+  background: #2d2e34;
+  color: white;
+}
+
+.project-preview {
+  display: flex;
+}
+
+.project-preview span {
+  padding: 0;
+  margin: 10px;
+}
+
+.project-navigator {
+  display: inline-flex;
+}
+
+.project-navigator button {
+  position: relative;
+  top: 40%;
+
+  font-family: "Courier";
+  background: none;
+  cursor: pointer;
+  color: white;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 100%;
+
+  margin: 0;
+}
+
+.project-navigator button:hover {
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
+.project-navigator img {
+  max-width: 470px;
+  max-height: 470px;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+
+.project-description {
+  margin-left: 10px;
+  text-align: left;
+  line-height: 17px;
+}
+
+.project-description .header {
+  text-align: left;
+}
+
+.work-history {
+  margin-bottom: 7vw;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.education {
+  margin-bottom: 7vw;
+  margin-left: 25%;
+  margin-right: 20%;
+}
+
+.additional-skills {
+  margin-bottom: 7vw;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.contact {
+  margin-bottom: 7vw;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+
+.contact-header {
+  text-align: center;
+  padding: 25%;
+  font-family: "Mont light";
+  color: white;
+  font-size: 5vw;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.contact button {
+  text-align: center;
+  position: relative;
+  font-family: "Courier";
+  background: none;
+  cursor: pointer;
+  color: white;
+
+  padding: 15px;
+
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+
+  width: 20%;
+
+  margin-top: 45px;
+  margin-bottom: 20%;
+}
+
+.contact button:hover {
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .App {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .about {
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 30%;
+  }
+
+  .projects {
+    margin-bottom: 50%;
+  }
+
+  .work-history {
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 30%;
+  }
+
+  .education {
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 30%;
+  }
+
+  .additional-skills {
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 30%;
+  }
+
+  .projects-list {
+    display: none;
+  }
+
+  .project-preview {
+    display: grid;
+  }
+
+  .project-navigator button {
+    position: relative;
+    top: 50%;
+  }
+
+  .project-description {
+    text-align: center;
+  }
+
+  .project-description .header {
+    text-align: center;
+  }
+
+  .project-preview span {
+    padding: 0;
+    margin: 10px;
+  }
+
+  .project-preview img {
+    margin-top: 35px;
+    max-width: 80%;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+  }
+  .project-preview button {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    border-width: 2px;
+  }
+
+  .job-title {
+    margin: 0;
+    padding-top: 75%;
+    padding-bottom: 75%;
+    font-size: 9vw;
+  }
+
+  .job-title h1 {
+    font-size: 9vw;
+  }
+
+  .contact {
+    margin: 0;
+    margin-top: 40%;
+    margin-bottom: 30%;
+    padding: 0;
+  }
+
+  .contact p {
+    margin-bottom: 0;
+  }
+
+  .contact-header {
+    font-size: 9vw;
+  }
+}
