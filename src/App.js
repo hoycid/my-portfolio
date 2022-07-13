@@ -14,7 +14,7 @@ function App() {
       image: foodorder,
       description: "A basic food order app with functional cart and menu.",
       technology: "[Javascript, React, NodeJS]",
-      link: "react-foods-order.herokuapp.com/",
+      link: "https://react-foods-order.herokuapp.com/",
     },
     {
       title: "Portfolio website",
@@ -22,7 +22,7 @@ function App() {
       description:
         "My personal portolio website to showcase my work history and recent projects.",
       technology: "[Javascript, React, NodeJS]",
-      link: "cidrex-quilang.herokuapp.com",
+      link: "https://cidrex-quilang.herokuapp.com/",
     },
   ]);
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
@@ -116,7 +116,11 @@ function App() {
                       <p className={classes.highlight}>
                         {projects[currentProjectIndex].technology}
                       </p>
-                      <a href={projects[currentProjectIndex].link}>
+                      <a
+                        href={projects[currentProjectIndex].link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         {projects[currentProjectIndex].link}
                       </a>
                     </span>
@@ -142,18 +146,16 @@ function App() {
           <div className={classes.education}>
             <h3>{"<education>"}</h3>
             <div className={classes.content}>
-              <p>
-                <h4>2019</h4>
-                <div className={classes.content}>
-                  <ul>
-                    <li>
-                      Bachelor of Science in Information Technology | Bukidnon
-                      State University
-                    </li>
-                  </ul>
-                </div>
-                <h4>2016</h4>
-              </p>
+              <h4>2019</h4>
+              <div className={classes.content}>
+                <ul>
+                  <li>
+                    Bachelor of Science in Information Technology | Bukidnon
+                    State University
+                  </li>
+                </ul>
+              </div>
+              <h4>2016</h4>
               <p>Completed courses such as:</p>
               <div className={classes.content}>
                 <ul>
