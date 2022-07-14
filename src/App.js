@@ -99,10 +99,17 @@ function App() {
                         onClick={() => navigateProj("prev")}
                       >{`<`}</button>
                     </span>
-                    <img
-                      src={projects[currentProjectIndex].image}
-                      alt={projects[currentProjectIndex].title}
-                    />
+                    <a
+                      href={projects[currentProjectIndex].link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={projects[currentProjectIndex].image}
+                        alt={projects[currentProjectIndex].title}
+                      />
+                    </a>
+
                     <span>
                       <button
                         onClick={() => navigateProj("next")}
