@@ -31,16 +31,6 @@ ul {
   font-family: "Mont";
 }
 
-.about {
-  font-family: "Courier";
-  text-align: justify;
-  font-size: 13px;
-  margin-bottom: 7vw;
-  margin-left: 25%;
-  margin-right: 25%;
-  line-height: 25px;
-}
-
 .content {
   border: 0;
   border-left: 1px;
@@ -57,11 +47,6 @@ ul {
   margin-bottom: 35px;
   font-family: "Mont light";
   line-height: 17px;
-}
-
-.projects {
-  text-align: left;
-  margin-bottom: 7vw;
 }
 
 .projects-viewer {
@@ -155,6 +140,22 @@ ul {
 
 .project-description .header {
   text-align: left;
+}
+
+.about {
+  margin-top: 10vw;
+  margin-bottom: 20vw;
+  font-family: "Courier";
+  text-align: justify;
+  font-size: 13px;
+  margin-left: 25%;
+  margin-right: 25%;
+  line-height: 25px;
+}
+
+.projects {
+  text-align: left;
+  margin-bottom: 25vw;
 }
 
 .work-history {
@@ -284,7 +285,7 @@ ul {
     max-width: 80%;
 
     border-style: solid;
-    border-width: 2px;
+    border-width: 1.5px;
     border-color: white;
   }
   .project-preview button {
@@ -293,7 +294,7 @@ ul {
     padding-top: 2px;
     padding-bottom: 2px;
 
-    border-width: 2px;
+    border-width: 1.5px;
   }
 
   .job-title {
