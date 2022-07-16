@@ -52,17 +52,23 @@ ul {
   font-size: 14px;
   text-align: left;
 
-  margin-bottom: 7vw;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  
   margin-left: 25%;
   margin-right: 25%;
 }
 
+.work-history, .education, .additional-skills {
+  padding-top: 12%;
+  padding-bottom: 0;
+}
+
 .about {
-  margin-top: 10vw;
-  margin-bottom: 20vw;
   text-align: justify;
   font-size: 13px;
   line-height: 25px;
+  padding-top: 10%;
 }
 
 .education {
@@ -70,6 +76,8 @@ ul {
 }
 
 .contact {
+  padding-top: 20%;
+  padding-bottom: 20%;
   margin-left: 15%;
   margin-right: 15%;
   text-align: center;
@@ -77,7 +85,7 @@ ul {
 
 .contact-header {
   text-align: center;
-  padding: 25%;
+
   font-family: "Mont light";
   color: white;
   font-size: 5vw;
@@ -102,7 +110,6 @@ ul {
   width: 20%;
 
   margin-top: 45px;
-  margin-bottom: 20%;
 }
 
 .contact button:hover {
@@ -113,7 +120,8 @@ ul {
 
 .projects {
   text-align: left;
-  margin-bottom: 25vw;
+  padding-top: 15%;
+  padding-bottom: 20%;
   margin-left: 0%;
   margin-right: 0%;
 }

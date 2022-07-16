@@ -1,26 +1,46 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 
 import classes from "./App.module.css";
 
 import Navigation from "./components/Navbar/Navigation";
 
-import PORTFOLIO_LIST from "./resources/PORTFOLIO_LIST.js";
+import PORTFOLIO_LIST from "./resources/PORTFOLIO_LIST";
 
 function App() {
-  const [projects, setProjects] = useState([ {
-    title: "",
-    image: "",
-    description: "",
-    technology: "",
-    link: "",
-  }]);
+  const projectsSection = useRef(null);
+  const aboutSection = useRef(null);
+  const contactSection = useRef(null);
+
+  const refs = {
+    projectsSection: projectsSection,
+    aboutSection: aboutSection,
+    contactSection: contactSection,
+  };
+
+  const [projects, setProjects] = useState([
+    {
+      title: "",
+      image: "",
+      description: "",
+      technology: "",
+      link: "",
+    },
+  ]);
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
 
   useEffect(() => {
     setProjects(PORTFOLIO_LIST);
   }, []);
 
-  const navigateProj = type => {
+  const scrollToSection = ref => {
+    console.log(ref);
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
+  const navigateProjects = type => {
     if (type === "next" && currentProjectIndex < projects.length - 1) {
       setCurrentProjectIndex(currentProjectIndex + 1);
     }
@@ -35,36 +55,13 @@ function App() {
 
   return (
     <>
-      <Navigation />
+      <Navigation scrollFtn={scrollToSection} refs={refs} />
       <div className={classes.App}>
         <header className={classes["job-title"]}>
           <h1 className={classes["job-title-2"]}>front-end</h1> developer
         </header>
         <div className={classes.details}>
-          <section className={classes.about}>
-            <h3>{"<about>"}</h3>
-            <div className={classes.content}>
-              <p>
-                Working as a front end developer, I collaborated with a team to
-                develop a top-up website for a telecommunications company based
-                in Rome, Italy. I am working towards building a solid full stack
-                skillset to empower my ability to create.
-              </p>
-              <p className={classes.highlight}>
-                "To learn is not to know; there are the learners and the
-                learned. Memory makes the one, philosophy the others."
-              </p>
-              <p>
-                As an internet native, I extract and learn information in a
-                quick pace. I often indulge in the various aspects of the web
-                and contribute in its many communities. Coding knowledge is good
-                but the ability to collaborate and contribute is what holds this
-                world together.
-              </p>
-            </div>
-            <h3>{"</about>"}</h3>
-          </section>
-          <section className={classes.projects}>
+          <section className={classes.projects} ref={projectsSection}>
             <h3>{"<projects>"}</h3>
             <div className={classes.content}>
               <div className={classes["projects-viewer"]}>
@@ -89,7 +86,7 @@ function App() {
                   <div className={classes["project-navigator"]}>
                     <span>
                       <button
-                        onClick={() => navigateProj("prev")}
+                        onClick={() => navigateProjects("prev")}
                       >{`<`}</button>
                     </span>
                     <a
@@ -105,28 +102,52 @@ function App() {
 
                     <span>
                       <button
-                        onClick={() => navigateProj("next")}
+                        onClick={() => navigateProjects("next")}
                       >{`>`}</button>
                     </span>
                   </div>
                   <div className={classes["project-description"]}>
-                    <h2>{projects[currentProjectIndex].title}</h2>
-                    <p>{projects[currentProjectIndex].description}</p>
+                    <h2>{projects[currentProjectIndex].title || ""}</h2>
+                    <p>{projects[currentProjectIndex].description || ""}</p>
                     <p className={classes.highlight}>
-                      {projects[currentProjectIndex].technology}
+                      {projects[currentProjectIndex].technology ||
+                        "Not applicable"}
                     </p>
                     <a
-                      href={projects[currentProjectIndex].link}
+                      href={projects[currentProjectIndex].link || ""}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {projects[currentProjectIndex].link}
+                      {projects[currentProjectIndex].link || "No link found."}
                     </a>
                   </div>
                 </div>
               </div>
             </div>
             <h3>{"</projects>"}</h3>
+          </section>
+          <section className={classes.about} ref={aboutSection}>
+            <h3>{"<about>"}</h3>
+            <div className={classes.content}>
+              <p>
+                Working as a front end developer, I collaborated with a team to
+                develop a top-up website for a telecommunications company based
+                in Rome, Italy. I am working towards building a solid full stack
+                skillset to empower my ability to create.
+              </p>
+              <p className={classes.highlight}>
+                "To learn is not to know; there are the learners and the
+                learned. Memory makes the one, philosophy the others."
+              </p>
+              <p>
+                As an internet native, I extract and learn information in a
+                quick pace. I often indulge in the various aspects of the web
+                and contribute in its many communities. Coding knowledge is good
+                but the ability to collaborate and contribute is what holds this
+                world together.
+              </p>
+            </div>
+            <h3>{"</about>"}</h3>
           </section>
           <section className={classes["work-history"]}>
             <h3>{"<work history>"}</h3>
@@ -177,7 +198,7 @@ function App() {
             </div>
             <h3>{"</additional skills>"}</h3>
           </section>
-          <section className={classes.contact}>
+          <section className={classes.contact} ref={contactSection}>
             <div className={classes["contact-header"]}>Connect</div>
             <p>I’m open to any interesting opportunity, let’s get in touch!</p>
             <button>email</button>
