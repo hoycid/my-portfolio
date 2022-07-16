@@ -1,31 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import classes from "./App.module.css";
 
 import Navigation from "./components/Navbar/Navigation";
 
-import foodorder from "./assets/images/Screenshot 2022-07-13 095101.png";
-import portfolio from "./assets/images/Screenshot 2022-07-13 135147.png";
+import PORTFOLIO_LIST from "./resources/PORTFOLIO_LIST.js";
 
 function App() {
-  const [projects, setProjects] = useState([
-    {
-      title: "Food Order App",
-      image: foodorder,
-      description: "A basic food order app with functional cart and menu.",
-      technology: "[Javascript, React, NodeJS]",
-      link: "https://react-foods-order.herokuapp.com/",
-    },
-    {
-      title: "Portfolio website",
-      image: portfolio,
-      description:
-        "My personal portolio website to showcase my work history and recent projects.",
-      technology: "[Javascript, React, NodeJS]",
-      link: "https://cidrex-quilang.herokuapp.com/",
-    },
-  ]);
+  const [projects, setProjects] = useState([ {
+    title: "",
+    image: "",
+    description: "",
+    technology: "",
+    link: "",
+  }]);
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+
+  useEffect(() => {
+    setProjects(PORTFOLIO_LIST);
+  }, []);
 
   const navigateProj = type => {
     if (type === "next" && currentProjectIndex < projects.length - 1) {
