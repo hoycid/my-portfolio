@@ -6,6 +6,8 @@ import Navigation from "./components/Navbar/Navigation";
 
 import PORTFOLIO_LIST from "./resources/PORTFOLIO_LIST";
 
+import { socials } from "./resources/socials";
+
 function App() {
   const projectsSection = useRef(null);
   const aboutSection = useRef(null);
@@ -31,6 +33,10 @@ function App() {
   useEffect(() => {
     setProjects(PORTFOLIO_LIST);
   }, []);
+
+  const mailHandler = () => {
+    window.open(`mailto:${socials.email}?`);
+  };
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -219,7 +225,7 @@ function App() {
           <section className={classes.contact} ref={contactSection}>
             <div className={classes["contact-header"]}>Connect</div>
             <p>I’m open to any interesting opportunity, let’s get in touch!</p>
-            <button>email</button>
+            <button onClick={mailHandler}>email</button>
           </section>
         </div>
         <footer>
