@@ -9,6 +9,12 @@ body {
 }
 
 @font-face {
+  font-family: "Arrows";
+  src: local("Arrows"),
+    url(./assets/fonts/SimpleDirectionArrows.ttf) format("truetype");
+}
+
+@font-face {
   font-family: "Mont light";
   src: local("Mont light"),
     url(./assets/fonts/Mont/Mont-ExtraLightDEMO.otf) format("truetype");

@@ -32,8 +32,14 @@ function App() {
     setProjects(PORTFOLIO_LIST);
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const scrollToSection = ref => {
-    console.log(ref);
     window.scrollTo({
       top: ref.current.offsetTop,
       behavior: "smooth",
@@ -60,6 +66,12 @@ function App() {
         <header className={classes["job-title"]}>
           <h1 className={classes["job-title-2"]}>front-end</h1> developer
         </header>
+        <button
+          onClick={() => scrollToSection(projectsSection)}
+          className={classes.scrollTo}
+        >
+          scroll down
+        </button>
         <div className={classes.details}>
           <section className={classes.projects} ref={projectsSection}>
             <h3>{"<projects>"}</h3>
@@ -204,7 +216,12 @@ function App() {
             <button>email</button>
           </section>
         </div>
-        <footer></footer>
+        <footer className={classes.footer}>
+          <button onClick={scrollToTop} className={classes.scrollTo}>
+            back to top
+          </button>
+          <p>2020 | Designed and built by Cidrex Quilang</p>
+        </footer>
       </div>
     </>
   );
