@@ -1,6 +1,5 @@
 .App {
   color: white;
-  display: block;
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -8,12 +7,6 @@
 ul {
   padding: 0;
   list-style-type: none;
-}
-
-.details {
-  font-family: "Courier";
-  text-align: left;
-  font-size: 14px;
 }
 
 .job-title {
@@ -47,6 +40,82 @@ ul {
   margin-bottom: 35px;
   font-family: "Mont light";
   line-height: 17px;
+}
+
+.about,
+.projects,
+.work-history,
+.education,
+.additional-skills,
+.contact {
+  font-family: "Courier";
+  font-size: 14px;
+  text-align: left;
+
+  margin-bottom: 7vw;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.about {
+  margin-top: 10vw;
+  margin-bottom: 20vw;
+  text-align: justify;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+.education {
+  margin-right: 20%;
+}
+
+.contact {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+
+.contact-header {
+  text-align: center;
+  padding: 25%;
+  font-family: "Mont light";
+  color: white;
+  font-size: 5vw;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.contact button {
+  text-align: center;
+  position: relative;
+  font-family: "Courier";
+  background: none;
+  cursor: pointer;
+  color: white;
+
+  padding: 15px;
+
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+
+  width: 20%;
+
+  margin-top: 45px;
+  margin-bottom: 20%;
+}
+
+.contact button:hover {
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
+.projects {
+  text-align: left;
+  margin-bottom: 25vw;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 .projects-viewer {
@@ -138,85 +207,8 @@ ul {
   line-height: 17px;
 }
 
-.project-description .header {
-  text-align: left;
-}
-
-.about {
-  margin-top: 10vw;
-  margin-bottom: 20vw;
-  font-family: "Courier";
-  text-align: justify;
-  font-size: 13px;
-  margin-left: 25%;
-  margin-right: 25%;
-  line-height: 25px;
-}
-
-.projects {
-  text-align: left;
-  margin-bottom: 25vw;
-}
-
-.work-history {
-  margin-bottom: 7vw;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-.education {
-  margin-bottom: 7vw;
-  margin-left: 25%;
-  margin-right: 20%;
-}
-
-.additional-skills {
-  margin-bottom: 7vw;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-.contact {
-  margin-bottom: 7vw;
-  margin-left: 15%;
-  margin-right: 15%;
+.project-description h2 {
   text-align: center;
-}
-
-.contact-header {
-  text-align: center;
-  padding: 25%;
-  font-family: "Mont light";
-  color: white;
-  font-size: 5vw;
-  margin: 0;
-  padding-bottom: 25px;
-}
-
-.contact button {
-  text-align: center;
-  position: relative;
-  font-family: "Courier";
-  background: none;
-  cursor: pointer;
-  color: white;
-
-  padding: 15px;
-
-  border-color: white;
-  border-style: solid;
-  border-width: 1px;
-
-  width: 20%;
-
-  margin-top: 45px;
-  margin-bottom: 20%;
-}
-
-.contact button:hover {
-  background-color: white;
-  border-color: black;
-  color: black;
 }
 
 @media only screen and (max-width: 768px) {
@@ -226,7 +218,21 @@ ul {
     margin-right: 5%;
   }
 
-  .about {
+  .job-title {
+    margin: 0;
+    padding-top: 75%;
+    padding-bottom: 75%;
+    font-size: 9vw;
+  }
+
+  .job-title h1 {
+    font-size: 9vw;
+  }
+
+  .about,
+  .work-history,
+  .education,
+  .additional-skills {
     margin-left: 0%;
     margin-right: 0%;
     margin-bottom: 30%;
@@ -234,24 +240,6 @@ ul {
 
   .projects {
     margin-bottom: 50%;
-  }
-
-  .work-history {
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-bottom: 30%;
-  }
-
-  .education {
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-bottom: 30%;
-  }
-
-  .additional-skills {
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-bottom: 30%;
   }
 
   .projects-list {
@@ -271,7 +259,7 @@ ul {
     text-align: center;
   }
 
-  .project-description .header {
+  .project-description h2 {
     text-align: center;
   }
 
@@ -282,7 +270,7 @@ ul {
 
   .project-preview img {
     margin-top: 35px;
-    max-width: 80%;
+    max-width: 100%;
 
     border-style: solid;
     border-width: 1.5px;
@@ -295,17 +283,6 @@ ul {
     padding-bottom: 2px;
 
     border-width: 1.5px;
-  }
-
-  .job-title {
-    margin: 0;
-    padding-top: 75%;
-    padding-bottom: 75%;
-    font-size: 9vw;
-  }
-
-  .job-title h1 {
-    font-size: 9vw;
   }
 
   .contact {

@@ -44,11 +44,11 @@ function App() {
     <>
       <Navigation />
       <div className={classes.App}>
-        <div className={classes["job-title"]}>
+        <header className={classes["job-title"]}>
           <h1 className={classes["job-title-2"]}>front-end</h1> developer
-        </div>
+        </header>
         <div className={classes.details}>
-          <div className={classes.about}>
+          <section className={classes.about}>
             <h3>{"<about>"}</h3>
             <div className={classes.content}>
               <p>
@@ -70,8 +70,8 @@ function App() {
               </p>
             </div>
             <h3>{"</about>"}</h3>
-          </div>
-          <div className={classes.projects}>
+          </section>
+          <section className={classes.projects}>
             <h3>{"<projects>"}</h3>
             <div className={classes.content}>
               <div className={classes["projects-viewer"]}>
@@ -117,27 +117,25 @@ function App() {
                     </span>
                   </div>
                   <div className={classes["project-description"]}>
-                    <span>
-                      <h2>{projects[currentProjectIndex].title}</h2>
-                      <p>{projects[currentProjectIndex].description}</p>
-                      <p className={classes.highlight}>
-                        {projects[currentProjectIndex].technology}
-                      </p>
-                      <a
-                        href={projects[currentProjectIndex].link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {projects[currentProjectIndex].link}
-                      </a>
-                    </span>
+                    <h2>{projects[currentProjectIndex].title}</h2>
+                    <p>{projects[currentProjectIndex].description}</p>
+                    <p className={classes.highlight}>
+                      {projects[currentProjectIndex].technology}
+                    </p>
+                    <a
+                      href={projects[currentProjectIndex].link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {projects[currentProjectIndex].link}
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
             <h3>{"</projects>"}</h3>
-          </div>
-          <div className={classes["work-history"]}>
+          </section>
+          <section className={classes["work-history"]}>
             <h3>{"<work history>"}</h3>
             <div className={classes.content}>
               <h4>2020</h4>
@@ -149,8 +147,8 @@ function App() {
               <h4>2019</h4>
             </div>
             <h3>{"</work history>"}</h3>
-          </div>
-          <div className={classes.education}>
+          </section>
+          <section className={classes.education}>
             <h3>{"<education>"}</h3>
             <div className={classes.content}>
               <h4>2019</h4>
@@ -175,8 +173,8 @@ function App() {
             </div>
 
             <h3>{"</education>"}</h3>
-          </div>
-          <div className={classes["additional-skills"]}>
+          </section>
+          <section className={classes["additional-skills"]}>
             <h3>{"<additional skills>"}</h3>
             <div className={classes.content}>
               <ul>
@@ -185,13 +183,14 @@ function App() {
               </ul>
             </div>
             <h3>{"</additional skills>"}</h3>
-          </div>
-          <div className={classes.contact}>
+          </section>
+          <section className={classes.contact}>
             <div className={classes["contact-header"]}>Connect</div>
             <p>I’m open to any interesting opportunity, let’s get in touch!</p>
             <button>email</button>
-          </div>
+          </section>
         </div>
+        <footer></footer>
       </div>
     </>
   );
