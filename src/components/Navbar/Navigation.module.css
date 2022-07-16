@@ -13,23 +13,17 @@
   border-color: white;
 }
 
-.navigation a {
-  cursor: pointer;
-  text-decoration: none;
-  color: white;
-}
-
 .navigation a:hover {
   color: #2d2e34;
 }
 
 .navigation button {
   background: none;
-	color: inherit;
-	border: none;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .navigation button:hover {
@@ -39,7 +33,8 @@
 .logo {
   margin-left: 15%;
   margin-right: 30px;
-  padding: 5px;
+  padding: 0px;
+  padding-top: 6px;
   font-weight: 800;
 }
 
@@ -51,15 +46,34 @@
 }
 
 .resume {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+
   position: absolute;
-  padding: 5px;
+  padding: 0px;
+  padding-top: 6px;
   right: 15%;
 }
 
 .menu {
   padding: 5px;
+  padding-bottom: 7px;
 }
 
-.menu a {
-  margin-right: 15px;
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .navigation {
+    font-size: 90%;
+  }
+
+  .logo {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: 800;
+  }
+
+  .resume {
+    right: 5%;
+  }
 }

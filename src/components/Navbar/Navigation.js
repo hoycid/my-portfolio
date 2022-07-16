@@ -3,7 +3,6 @@ import classes from "./Navigation.module.css";
 import links from "../../resources/links";
 
 const Navigation = props => {
-
   return (
     <div className={classes.navigation}>
       <div className={classes.logo}>
@@ -32,9 +31,9 @@ const Navigation = props => {
           contact
         </button>
       </div>
-      <div className={classes.resume}>
-        <a href="/CV.pdf" download>resume</a>
-      </div>
+      <a className={classes.resume} href="/CV.pdf" download>
+        resume
+      </a>
     </div>
   );
 };
