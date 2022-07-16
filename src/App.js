@@ -59,19 +59,25 @@ function App() {
     setCurrentProjectIndex(index);
   };
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <Navigation scrollFtn={scrollToSection} refs={refs} />
       <div className={classes.App}>
-        <header className={classes["job-title"]}>
-          <h1 className={classes["job-title-2"]}>front-end</h1> developer
+        <header>
+          <div className={classes["job-title"]}>
+            <h1>front-end</h1> developer
+          </div>
+          <div className={classes["job-title-scrolldown"]}>
+            <button
+              onClick={() => scrollToSection(projectsSection)}
+              className={classes.scrollTo}
+            >
+              scroll down
+            </button>
+          </div>
         </header>
-        <button
-          onClick={() => scrollToSection(projectsSection)}
-          className={classes.scrollTo}
-        >
-          scroll down
-        </button>
         <div className={classes.details}>
           <section className={classes.projects} ref={projectsSection}>
             <h3>{"<projects>"}</h3>
@@ -216,11 +222,11 @@ function App() {
             <button>email</button>
           </section>
         </div>
-        <footer className={classes.footer}>
+        <footer>
           <button onClick={scrollToTop} className={classes.scrollTo}>
             back to top
           </button>
-          <p>2020 | Designed and built by Cidrex Quilang</p>
+          <p>{currentYear} | Designed and built by Cidrex Quilang</p>
         </footer>
       </div>
     </>
