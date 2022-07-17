@@ -1,5 +1,5 @@
 import links from "./links";
-import images from "./imageList";
+import images from "./images";
 
 const PORTFOLIO_LIST = [
   {
