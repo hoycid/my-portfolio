@@ -31,7 +31,7 @@ const Navigation = props => {
           contact
         </button>
       </div>
-      <a className={classes.resume} href="/CV.pdf" download>
+      <a className={classes.resume} href="/CV.pdf">
         resume
       </a>
     </div>
