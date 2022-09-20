@@ -142,7 +142,7 @@ function App() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {projects[currentProjectIndex].link || "No link found."}
+                      {projects[currentProjectIndex].link || ""}
                     </a>
                   </div>
                 </div>
