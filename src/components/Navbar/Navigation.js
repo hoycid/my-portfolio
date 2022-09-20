@@ -4,7 +4,7 @@ import links from "../../resources/links";
 
 const Navigation = props => {
   return (
-    <div className={classes.navigation}>
+    <header className={classes.navigation}>
       <div className={classes.logo}>
         <a href={links.portfolio}>{"</devqui>"}</a>
       </div>
@@ -34,7 +34,7 @@ const Navigation = props => {
       <a className={classes.resume} href="/CV.pdf">
         resume
       </a>
-    </div>
+    </header>
   );
 };
 
