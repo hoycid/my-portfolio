@@ -6,7 +6,7 @@ const Navigation = props => {
   return (
     <header className={classes.navigation}>
       <div className={classes.logo}>
-        <a href={links.portfolio}>{"</devqui>"}</a>
+        <a href={links.portfolio}>{"cidrex quilang"}</a>
       </div>
       <div className={classes.menu}>
         <button
