@@ -73,7 +73,8 @@ function App() {
       <div className={classes.App}>
         <header>
           <div className={classes["job-title"]}>
-            Nice to meet you!<h1>I'm Cid</h1>
+            <p>Nice to meet you!</p>
+            <h1>I'm Cid</h1>
           </div>
           <div className={classes["job-title-scrolldown"]}>
             <button
