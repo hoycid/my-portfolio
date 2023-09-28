@@ -73,7 +73,7 @@ function App() {
       <div className={classes.App}>
         <header>
           <div className={classes["job-title"]}>
-            <h1>front-end</h1> developer
+            Nice to meet you!<h1>I'm Cid</h1>
           </div>
           <div className={classes["job-title-scrolldown"]}>
             <button
@@ -86,7 +86,7 @@ function App() {
         </header>
         <div className={classes.details}>
           <section className={classes.projects} ref={projectsSection}>
-            <h3>{"<projects>"}</h3>
+            <h3>{"i make projects such as..."}</h3>
             <div className={classes.content}>
               <div className={classes["projects-viewer"]}>
                 <div className={classes["projects-list"]}>
@@ -148,20 +148,20 @@ function App() {
                 </div>
               </div>
             </div>
-            <h3>{"</projects>"}</h3>
           </section>
           <section className={classes.about} ref={aboutSection}>
-            <h3>{"<about>"}</h3>
+            <h3>{"i am..."}</h3>
             <div className={classes.content}>
               <p>
-                Working as a front end developer, I collaborated with a team to
+                a web developer, I collaborated with a team to
                 develop a top-up website for a telecommunications company based
                 in Rome, Italy. I am working towards building a solid full stack
                 skillset to empower my ability to create.
               </p>
               <p className={classes.highlight}>
                 "To learn is not to know; there are the learners and the
-                learned. Memory makes the one, philosophy the others."
+                learned. Memory makes the one, philosophy the others.
+                - Alexandre Dumas, The Count of Monte Cristo"
               </p>
               <p>
                 As an internet native, I extract and learn information in a
@@ -171,10 +171,9 @@ function App() {
                 world together.
               </p>
             </div>
-            <h3>{"</about>"}</h3>
           </section>
           <section className={classes["work-history"]}>
-            <h3>{"<work history>"}</h3>
+            <h3>{"I've worked for..."}</h3>
             <div className={classes.content}>
               <h4>2020</h4>
               <div className={classes.content}>
@@ -184,10 +183,9 @@ function App() {
               </div>
               <h4>2019</h4>
             </div>
-            <h3>{"</work history>"}</h3>
           </section>
           <section className={classes.education}>
-            <h3>{"<education>"}</h3>
+            <h3>{"i studied in..."}</h3>
             <div className={classes.content}>
               <h4>2019</h4>
               <div className={classes.content}>
@@ -199,6 +197,16 @@ function App() {
                 </ul>
               </div>
               <h4>2016</h4>
+              <h4>2023</h4>
+              <div className={classes.content}>
+                <ul>
+                  <li>
+                    Postgraduate Diploma in Information Technology | Te Pūkenga
+                    Eastern Institute of Technology
+                  </li>
+                </ul>
+              </div>
+              <h4>the present</h4>
               <p>Completed courses such as:</p>
               <div className={classes.content}>
                 <ul>
@@ -210,17 +218,15 @@ function App() {
               </div>
             </div>
 
-            <h3>{"</education>"}</h3>
           </section>
           <section className={classes["additional-skills"]}>
-            <h3>{"<additional skills>"}</h3>
+            <h3>{"i also know..."}</h3>
             <div className={classes.content}>
               <ul>
                 <li>Git and GitHub</li>
                 <li>Project management tools (Trello)</li>
               </ul>
             </div>
-            <h3>{"</additional skills>"}</h3>
           </section>
           <section className={classes.contact} ref={contactSection}>
             <div className={classes["contact-header"]}>Connect</div>
@@ -232,7 +238,7 @@ function App() {
           <button onClick={scrollToTop} className={classes.scrollTo}>
             back to top
           </button>
-          <p>{currentYear} | Designed and built by Cidrex Quilang</p>
+          <p>{currentYear} | Cidrex Quilang</p>
         </footer>
       </div>
     </>
