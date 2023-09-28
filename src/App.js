@@ -72,11 +72,11 @@ function App() {
       <Navigation scrollFtn={scrollToSection} refs={refs} />
       <div className={classes.App}>
         <header>
-          <div className={classes["job-title"]}>
+          <div className={classes["greeting"]}>
             <p>Nice to meet you!</p>
             <h1>I'm Cid</h1>
           </div>
-          <div className={classes["job-title-scrolldown"]}>
+          <div className={classes["greeting-scrolldown"]}>
             <button
               onClick={() => scrollToSection(projectsSection)}
               className={classes.scrollTo}
