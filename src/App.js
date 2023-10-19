@@ -203,7 +203,7 @@ function App() {
                 <ul>
                   <li>
                     Bachelor of Science in Information Technology | Bukidnon
-                    State University, Malaybalay, PH
+                    State University | Malaybalay, PH
                   </li>
                 </ul>
               </div>
