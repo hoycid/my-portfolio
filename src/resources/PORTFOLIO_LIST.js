@@ -6,9 +6,17 @@ const PORTFOLIO_LIST = [
     title: "PAGRO Admin",
     image: images.pagro,
     description:
-      "A document processing and recording web application for the Provincial Agriculture Office.",
-    technology: "[Javascript, NextJS, NodeJS]",
-    link: "",
+      "A document processing and recording web application for the Provincial Agriculture Office in Malaybalay, Philippines.",
+    technology: "[Javascript, NextJS, NodeJS, MongoDB]",
+    link: "pagro",
+  },
+  {
+    title: "Muzic App",
+    image: images.muzic,
+    description:
+      "A landing page for Muzic, a music learning center based in Malaybalay, Philippines.",
+    technology: "[Javascript, React, NodeJS]",
+    link: "muzic",
   },
   // {
   //   title: "Portfolio website",
