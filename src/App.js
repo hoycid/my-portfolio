@@ -188,6 +188,16 @@ function App() {
           <section className={classes.education}>
             <h3>{"i studied in..."}</h3>
             <div className={classes.content}>
+            <h4>Present</h4>
+              <div className={classes.content}>
+                <ul>
+                  <li>
+                    Postgraduate Diploma in Information Technology | Te Pūkenga
+                    Eastern Institute of Technology
+                  </li>
+                </ul>
+              </div>
+              <h4>2023</h4>
               <h4>2019</h4>
               <div className={classes.content}>
                 <ul>
@@ -198,17 +208,7 @@ function App() {
                 </ul>
               </div>
               <h4>2016</h4>
-              <h4>2023</h4>
-              <div className={classes.content}>
-                <ul>
-                  <li>
-                    Postgraduate Diploma in Information Technology | Te Pūkenga
-                    Eastern Institute of Technology
-                  </li>
-                </ul>
-              </div>
-              <h4>the present</h4>
-              <p>Completed courses such as:</p>
+              {/* <p>Completed courses such as:</p>
               <div className={classes.content}>
                 <ul>
                   <li>
@@ -216,7 +216,7 @@ function App() {
                   </li>
                   <li>NextJS - The Complete Guide</li>
                 </ul>
-              </div>
+              </div> */}
             </div>
 
           </section>
