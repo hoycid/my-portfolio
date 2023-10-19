@@ -8,7 +8,7 @@ const PORTFOLIO_LIST = [
     description:
       "A document processing and recording web application for the Provincial Agriculture Office in Malaybalay, Philippines.",
     technology: "[Javascript, NextJS, NodeJS, MongoDB]",
-    link: "pagro",
+    link: links.pagro,
   },
   {
     title: "Muzic App",
@@ -16,7 +16,7 @@ const PORTFOLIO_LIST = [
     description:
       "A landing page for Muzic, a music learning center based in Malaybalay, Philippines.",
     technology: "[Javascript, React, NodeJS]",
-    link: "muzic",
+    link: links.muzic,
   },
   // {
   //   title: "Portfolio website",
