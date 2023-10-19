@@ -193,7 +193,7 @@ function App() {
                 <ul>
                   <li>
                     Postgraduate Diploma in Information Technology | Te Pūkenga
-                    Eastern Institute of Technology
+                    Eastern Institute of Technology | Auckland, NZ
                   </li>
                 </ul>
               </div>
@@ -203,7 +203,7 @@ function App() {
                 <ul>
                   <li>
                     Bachelor of Science in Information Technology | Bukidnon
-                    State University
+                    State University, Malaybalay, PH
                   </li>
                 </ul>
               </div>
