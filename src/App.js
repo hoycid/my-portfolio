@@ -182,7 +182,7 @@ function App() {
               <h4>2020</h4>
               <div className={classes.content}>
                 <ul>
-                  <li>Front-end developer | CresCode | Philippines</li>
+                  <li>Web developer | CresCode | Philippines</li>
                 </ul>
               </div>
               <h4>2019</h4>
