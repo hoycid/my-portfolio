@@ -87,7 +87,7 @@ function App() {
         </header>
         <div className={classes.details}>
           <section className={classes.projects} ref={projectsSection}>
-            <h3>{"i make projects such as..."}</h3>
+            <h3>{"my projects"}</h3>
             <div className={classes.content}>
               <div className={classes["projects-viewer"]}>
                 <div className={classes["projects-list"]}>
@@ -151,7 +151,7 @@ function App() {
             </div>
           </section>
           <section className={classes.about} ref={aboutSection}>
-            <h3>{"i am..."}</h3>
+            <h3>{"about me"}</h3>
             <div className={classes.content}>
               <p>
                 a web developer aiming to build a solid full stack
@@ -169,7 +169,7 @@ function App() {
             </div>
           </section>
           <section className={classes["work-history"]}>
-            <h3>{"I've worked for..."}</h3>
+            <h3>{"my work history"}</h3>
             <div className={classes.content}>
               <h4>2020</h4>
               <div className={classes.content}>
@@ -181,7 +181,7 @@ function App() {
             </div>
           </section>
           <section className={classes.education}>
-            <h3>{"i studied in..."}</h3>
+            <h3>{"my education"}</h3>
             <div className={classes.content}>
             <h4>Present</h4>
               <div className={classes.content}>
@@ -216,7 +216,7 @@ function App() {
 
           </section>
           <section className={classes["additional-skills"]}>
-            <h3>{"i also know..."}</h3>
+            <h3>{"my other skills"}</h3>
             <div className={classes.content}>
               <ul>
                 <li>Git and GitHub</li>
