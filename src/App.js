@@ -233,7 +233,7 @@ function App() {
             </div>
           </section>
           <section className={classes.contact} ref={contactSection}>
-            <div className={classes["contact-header"]}>Connect</div>
+            <div className={classes["contact-header"]}>Contact</div>
             <p>I’m open to any interesting opportunity, let’s get in touch!</p>
             <button onClick={mailHandler}>email</button>
           </section>
