@@ -219,7 +219,7 @@ function App() {
             <h3>{"my other skills"}</h3>
             <div className={classes.content}>
               <ul>
-                <li>Git and GitHub</li>
+                <li>Version control tools (Git and GitHub)</li>
                 <li>Project management tools (Trello)</li>
               </ul>
             </div>
