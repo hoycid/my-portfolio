@@ -154,22 +154,17 @@ function App() {
             <h3>{"i am..."}</h3>
             <div className={classes.content}>
               <p>
-                a web developer, I collaborated with a team to
-                develop a top-up website for a telecommunications company based
-                in Rome, Italy. I am working towards building a solid full stack
+                a web developer aiming to build a solid full stack
                 skillset to empower my ability to create.
               </p>
-              <p className={classes.highlight}>
+              {/* <p className={classes.highlight}>
                 "To learn is not to know; there are the learners and the
                 learned. Memory makes the one, philosophy the others.
                 - Alexandre Dumas, The Count of Monte Cristo"
-              </p>
+              </p> */}
               <p>
                 As an internet native, I extract and learn information in a
-                quick pace. I often indulge in the various aspects of the web
-                and contribute in its many communities. Coding knowledge is good
-                but the ability to collaborate and contribute is what holds this
-                world together.
+                quick pace using the internet and recently, with AI.
               </p>
             </div>
           </section>
