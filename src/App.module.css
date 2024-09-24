@@ -50,13 +50,18 @@ header {
 
   padding: 11%;
   padding-top: 20%;
-  padding-bottom: 23%;
+  padding-bottom: 13%;
 }
 
 .greeting h1 {
   font-size: 5.5vw;
   display: inline;
   font-family: "Mont";
+}
+
+.greeting h3 {
+  font-size: 1.0vw;
+  font-family: "Mont light";
 }
 
 .greeting p {
@@ -115,7 +120,8 @@ header {
   text-align: justify;
   font-size: 13px;
   line-height: 25px;
-  padding-top: 10%;
+  padding-top: 15%;
+  padding-bottom: 15%;
 }
 
 .education {

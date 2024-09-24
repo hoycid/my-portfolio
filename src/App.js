@@ -73,8 +73,9 @@ function App() {
       <div className={classes.App}>
         <header>
           <div className={classes["greeting"]}>
-            <p>Nice to meet you!</p>
+            <p>Hello there!</p>
             <h1>I'm Cid</h1>
+            <h3>I make web apps.</h3>
           </div>
           <div className={classes["greeting-scrolldown"]}>
             <button
@@ -154,27 +155,34 @@ function App() {
             <h3>{"about me"}</h3>
             <div className={classes.content}>
               <p>
-                a web developer aiming to build a solid full stack
-                skillset to empower my ability to create.
+                I am a web developer aiming to build a solid full stack
+                skillset to empower my ability to create. 
               </p>
-              {/* <p className={classes.highlight}>
-                "To learn is not to know; there are the learners and the
-                learned. Memory makes the one, philosophy the others.
-                - Alexandre Dumas, The Count of Monte Cristo"
-              </p> */}
-              <p>
+              <p className={classes.highlight}>
                 As an internet native, I extract and learn information in a
                 quick pace using the internet and recently, with AI.
+              </p>
+              <p>
+                I am most familiar with the MERN stack but I also have experience with
+                other web development frameworks such as Angular and AdonisJs, as well as CMS's
+                such as Wordpress and Shopify.
               </p>
             </div>
           </section>
           <section className={classes["work-history"]}>
             <h3>{"my work history"}</h3>
             <div className={classes.content}>
+            <h4>2022</h4>
+              <div className={classes.content}>
+                <ul>
+                  <li>Administrative Aide I | Provincial Government of Bukidnon | Philippines</li>
+                </ul>
+              </div>
+              <h4>2020</h4>
               <h4>2020</h4>
               <div className={classes.content}>
                 <ul>
-                  <li>Front-end developer | CresCode | Manila, Philippines</li>
+                  <li>Front-end developer | CresCode | Philippines</li>
                 </ul>
               </div>
               <h4>2019</h4>
