@@ -4,6 +4,7 @@ import pagro from "../assets/images/pagro.webp";
 import muzic from "../assets/images/muzic.webp";
 import github from "../assets/images/github.svg";
 import linkedin from "../assets/images/linkedin.svg";
+import er from "../asset/images/er-character-planner.webp";
 
 const images = {
   foodorder: foodorder,
@@ -12,6 +13,7 @@ const images = {
   muzic: muzic,
   github: github,
   linkedin: linkedin,
+  er: er,
 };
 
 export default images;
