@@ -4,7 +4,7 @@ import images from "./images";
 const PORTFOLIO_LIST = [
   {
     title: "Elden Ring Character Planner (WIP)",
-    image: images.portfolio,
+    image: images.er,
     description:
       "A web application that simulates the character leveling and stat system of the video game Elden Ring.",
     technology: "[Javascript, React, NodeJs, ExpressJs, SQLite]",
