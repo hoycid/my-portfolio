@@ -75,7 +75,8 @@ function App() {
           <div className={classes["greeting"]}>
             <p>Hello there!</p>
             <h1>I'm Cid</h1>
-            <h3>I make web apps.</h3>
+            <h3>A dedicated web developer with a passion</h3>
+            <h3>for creating modern, slick, and functional web applications</h3>
           </div>
           <div className={classes["greeting-scrolldown"]}>
             <button
@@ -155,27 +156,38 @@ function App() {
             <h3>{"about me"}</h3>
             <div className={classes.content}>
               <p>
-                I am a web developer aiming to build a solid full stack
-                skillset to empower my ability to create. 
+                I am a web developer focused on developing a strong full-stack
+                skill set to enhance my creative capabilities. I am passionate
+                about creating user-friendly and visually appealing applications
+                that can be utilized by myself or others. Since 2023, I have
+                lived in Auckland, New Zealand, where I moved to pursue a
+                postgraduate degree in Information Technology. I have been based
+                in New Zealand since then"
               </p>
               <p className={classes.highlight}>
-                As an internet native, I extract and learn information in a
-                quick pace using the internet and recently, with AI.
+                I am primarily skilled in the MERN stack, but I also have
+                experience with other web development frameworks like Angular
+                and AdonisJs. Additionally, I've worked with CMS platforms such
+                as WordPress and Shopify, as well as relational databases like
+                MySQL and SQLite.
               </p>
               <p>
-                I am most familiar with the MERN stack but I also have experience with
-                other web development frameworks such as Angular and AdonisJs, as well as CMS's
-                such as Wordpress and Shopify.
+                As an digital native, I can quickly gather and learn information
+                online and recently, I've been utilizing AI to achieve the same
+                purpose in an even faster pace.
               </p>
             </div>
           </section>
           <section className={classes["work-history"]}>
             <h3>{"my work history"}</h3>
             <div className={classes.content}>
-            <h4>2022</h4>
+              <h4>2022</h4>
               <div className={classes.content}>
                 <ul>
-                  <li>Administrative Aide I | Provincial Government of Bukidnon | Philippines</li>
+                  <li>
+                    Administrative Aide I | Provincial Government of Bukidnon |
+                    Philippines
+                  </li>
                 </ul>
               </div>
               <h4>2020</h4>
@@ -191,7 +203,7 @@ function App() {
           <section className={classes.education}>
             <h3>{"my education"}</h3>
             <div className={classes.content}>
-            <h4>Present</h4>
+              <h4>Present</h4>
               <div className={classes.content}>
                 <ul>
                   <li>
@@ -221,7 +233,6 @@ function App() {
                 </ul>
               </div> */}
             </div>
-
           </section>
           <section className={classes["additional-skills"]}>
             <h3>{"my other skills"}</h3>
@@ -239,9 +250,29 @@ function App() {
           </section>
         </div>
         <footer>
+          <section>
+            {Object.entries(socials)
+              .filter(([key]) => key !== "email") // Destructure the key from the entry
+              .map(([key, social]) => (
+                <a
+                  key={key}
+                  href={social.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className={classes.icon}
+                    src={social.icon}
+                    alt={social.title}
+                  />
+                </a>
+              ))}
+          </section>
           <button onClick={scrollToTop} className={classes.scrollTo}>
             back to top
           </button>
+          <p>Email: quilangcidrex@gmail.com</p>
+          <p>Mobile: 0225845939</p>
           <p>{currentYear} | Cidrex Quilang</p>
         </footer>
       </div>

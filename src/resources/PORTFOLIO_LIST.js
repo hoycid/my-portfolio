@@ -11,7 +11,7 @@ const PORTFOLIO_LIST = [
     link: links.pagro,
   },
   {
-    title: "Muzic App",
+    title: "Muzic Landing Page",
     image: images.muzic,
     description:
       "A landing page for Muzic, a music learning center based in Malaybalay, Philippines.",
