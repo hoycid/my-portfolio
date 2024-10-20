@@ -6,8 +6,8 @@ import github from "../assets/images/github.svg";
 import linkedin from "../assets/images/linkedin.svg";
 
 const images = {
-  // foodorder: foodorder,
-  // portfolio: portfolio,
+  foodorder: foodorder,
+  portfolio: portfolio,
   pagro: pagro,
   muzic: muzic,
   github: github,
