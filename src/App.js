@@ -161,8 +161,7 @@ function App() {
                 about creating user-friendly and visually appealing applications
                 that can be utilized by myself or others. Since 2023, I have
                 lived in Auckland, New Zealand, where I moved to pursue a
-                postgraduate degree in Information Technology. I have been based
-                in New Zealand since then"
+                postgraduate degree in Information Technology.
               </p>
               <p className={classes.highlight}>
                 I am primarily skilled in the MERN stack, but I also have
