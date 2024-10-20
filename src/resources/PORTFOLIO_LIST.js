@@ -34,13 +34,13 @@ const PORTFOLIO_LIST = [
     technology: "[Javascript, React]",
     link: links.portfolio,
   },
-  {
-    title: "Food Order App",
-    image: images.foodorder,
-    description: "A basic food order app with functional cart and menu.",
-    technology: "[Javascript, React, NodeJS]",
-    link: links.foodorder,
-  },
+  // {
+  //   title: "Food Order App",
+  //   image: images.foodorder,
+  //   description: "A basic food order app with functional cart and menu.",
+  //   technology: "[Javascript, React, NodeJS]",
+  //   link: links.foodorder,
+  // },
 ];
 
 export default PORTFOLIO_LIST;
