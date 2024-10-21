@@ -304,8 +304,8 @@ header {
   .greeting {
     font-size: 8vw; /* Adjust font size for mobile */
     padding: 5%; /* Reduce padding */
-    padding-top: 70%;
-    padding-bottom: 65%;
+    padding-top: 65%;
+    padding-bottom: 50%;
   }
 
   .greeting h1 {
@@ -319,7 +319,7 @@ header {
   .greeting-scrolldown {
     align-items: center;
     text-align: center;
-    padding-bottom: 15%;
+    padding-bottom: 25%;
   }
 
   .about,
