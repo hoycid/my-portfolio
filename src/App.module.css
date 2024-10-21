@@ -96,6 +96,7 @@ header {
   margin: 0;
 }
 
+
 .content {
   border: 0;
   border-left: 1px solid white;
@@ -259,6 +260,7 @@ header {
   border-radius: 100%;
   margin: 0;
   transition: background-color 0.3s ease; /* Transition for button */
+  z-index: 1000; /* Ensure it stays on top */
 }
 
 .project-navigator button:hover {
@@ -271,7 +273,7 @@ header {
   width: 536px;
   height: 250px;
   border-style: solid;
-  border-width: 1.7px;
+  border-width: 2.2px;
   border-color: white;
   transition: transform 0.2s; /* Transition for scaling image */
 }
@@ -282,6 +284,8 @@ header {
 
 .project-description {
   margin-left: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
   text-align: left;
   line-height: 17px;
   transition: color 0.3s ease; /* Transition for text color */
@@ -291,106 +295,83 @@ header {
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .App {
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-left: 2%; /* Reduce padding for smaller screens */
+    padding-right: 2%;
   }
 
-  footer {
-    font-size: 9px;
-    padding-bottom: 10px;
+  .greeting {
+    font-size: 8vw; /* Adjust font size for mobile */
+    padding: 5%; /* Reduce padding */
+    padding-top: 70%;
+    padding-bottom: 65%;
   }
 
-  .job-title {
-    margin: 0;
-    padding-top: 75%;
-    padding-bottom: 85%;
-    font-size: 9vw;
+  .greeting h1 {
+    font-size: 9vw; /* Adjust font size for mobile */
   }
 
-  .job-title h1 {
-    font-size: 9vw;
+  .greeting h3 {
+    font-size: 2.5vw; /* Adjust font size for mobile */
+  }
+
+  .greeting-scrolldown {
+    align-items: center;
+    text-align: center;
+    padding-bottom: 15%;
   }
 
   .about,
+  .projects,
   .work-history,
   .education,
-  .additional-skills {
-    margin-left: 0%;
-    margin-right: 0%;
-    padding-top: 25%;
-    padding-bottom: 25%;
-  }
-
-  .about {
-    padding-top: 12%;
-  }
-
-  .projects {
-    padding-top: 25%;
-    padding-bottom: 25%;
-  }
-
-  .projects-list {
-    display: none;
-  }
-
-  .project-preview {
-    display: grid;
-  }
-
-  .project-navigator img {
-    width: 326px;
-    height: 150px;
-  }
-
-  .project-navigator button {
-    position: relative;
-    top: 50%;
-  }
-
-  .project-description {
-    text-align: center;
-  }
-
-  .project-description h2 {
-    text-align: center;
-  }
-
-  .project-preview span {
-    padding: 0;
-    margin: 10px;
-  }
-
-  .project-preview button {
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    border-width: 1.5px;
-  }
-
-  .project-description {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    font-size: 80%;
-  }
-
+  .additional-skills,
   .contact {
-    margin: 0;
-    margin-top: 40%;
-    margin-bottom: 30%;
-    padding: 0;
-  }
-
-  .contact p {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    margin-bottom: 0;
+    font-size: 12px; /* Adjust font size for mobile */
+    margin-left: 5%; /* Reduce margins */
+    margin-right: 5%;
+    padding-top: 40%;
+    padding-bottom: 40%;
   }
 
   .contact-header {
-    font-size: 9vw;
+    font-size: 12vw; /* Adjust font size for mobile */
+  }
+
+  .contact button {
+    font-size: 90%; /* Adjust font size for mobile */
+    padding: 5%; /* Adjust padding for mobile */
+  }
+
+  .projects-viewer {
+    flex-direction: column; /* Stack projects vertically on mobile */
+  }
+
+  .projects-list {
+    display: block; /* Switch to block display for smaller screens */
+  }
+
+  .projects-list li {
+    margin: 5px 0; /* Adjust margin for list items */
+    padding: 5px; /* Adjust padding for list items */
+  }
+
+  .project-navigator button {
+    display: none;
+  }
+
+  .project-navigator img {
+    width: 100%; /* Make image take up the full width */
+    height: auto; /* Maintain aspect ratio */
+    display: none;
+    margin: 0 auto; /* Center the image */
+  }
+
+  .project-description {
+    margin: 0;
+    width: 100%; /* Make description take up full width */
+    margin-top: 20px; /* Add space between the image and description */
   }
 }
+

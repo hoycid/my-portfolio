@@ -56,27 +56,29 @@
 /* Mobile adjustments */
 @media only screen and (max-width: 768px) {
   .navigation {
-    font-size: 0.8rem; /* Slightly smaller font size on mobile */
-    padding: 10px 5%;
+    font-size: 0.9rem; /* Slightly smaller font size on mobile */
+    padding: 10px 5%; /* Reduce horizontal padding for mobile */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
   }
 
   .logo {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1rem; /* Increase font size for better visibility on mobile */
   }
 
   .logo a {
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
-    font-size: 0.9rem; /* Increased size for better visibility */
+    font-size: 1rem; /* Keep size consistent */
   }
 
   .resume {
-    right: 5%;
-    font-size: 0.8rem;
-    line-height: 1.5; /* Adjust for vertical alignment */
-    padding: 5px 0; /* Adjust for consistent padding */
-    /* margin-top: -2px; */ /* Uncomment and adjust if needed */
+    right: 5%; /* Adjust for smaller screens */
+    font-size: 0.9rem; /* Increase for better visibility */
+    padding: 5px 0; /* Consistent padding */
+  }
+
+  .menu {
+    padding: 5px 0;
+    margin-top: 5px; /* Add some space between logo and menu */
   }
 }
