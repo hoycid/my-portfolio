@@ -10,14 +10,20 @@ html {
   color: white;
   margin: 0 auto; /* Center the app without extra margins */
   max-width: 100%; /* Ensure app doesn't overflow */
-  padding-left: 8%; /* Use padding instead of margin for responsive spacing */
-  padding-right: 8%;
+  padding-left: 5%; /* Use padding instead of margin for responsive spacing */
+  padding-right: 5%;
+  transition: background-color 0.3s ease; /* Transition for background color */
 }
 
 .icon {
-  width: 50px;
-  height: auto;
-  filter: brightness(0) invert(1);
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  filter: brightness(0) invert(1); /* Makes non-SVG images white */
+  transition: transform 0.2s; /* Transition for scaling */
+}
+
+.icon:hover {
+  transform: scale(1.15); /* Scale up icon slightly on hover */
 }
 
 ul {
@@ -30,6 +36,7 @@ footer {
   font-size: 10px;
   padding-bottom: 20px;
   text-align: center;
+  transition: font-size 0.3s ease; /* Transition for font size change */
 }
 
 .scrollTo {
@@ -40,9 +47,12 @@ footer {
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   font-size: 13px;
   padding-bottom: 15px;
+  transition: color 0.3s ease; /* Transition for color change */
 }
 
 .scrollTo:hover {
@@ -60,24 +70,24 @@ header {
   text-align: center;
   font-size: 5vw;
   padding: 11%;
-  padding-top: 12%;
+  padding-top: 20%;
   padding-bottom: 13%;
+  transition: color 0.3s ease; /* Transition for greeting color change */
 }
 
 .greeting h1 {
-  font-size: 5.5rem;
+  font-size: 5.5vw;
   display: inline;
   font-family: "Mont";
 }
 
 .greeting h3 {
-  font-size: 0.9rem;
+  font-size: 0.9vw;
   font-family: "Mont light";
 }
 
 .greeting p {
   margin: 0;
-  font-size: 5rem;
 }
 
 .greeting-scrolldown {
@@ -91,14 +101,17 @@ header {
   border-left: 1px solid white;
   padding-left: 15px;
   margin-left: 15px;
+  transition: border-color 0.3s ease; /* Transition for border color change */
 }
 
 .highlight {
   text-align: center;
+  font-style: none;
   margin-top: 35px;
   margin-bottom: 35px;
   font-family: "Mont light";
   line-height: 17px;
+  transition: margin 0.3s ease; /* Transition for margin changes */
 }
 
 .about,
@@ -114,12 +127,14 @@ header {
   padding-bottom: 10%;
   margin-left: 25%;
   margin-right: 25%;
+  transition: margin 0.3s ease; /* Transition for margin changes */
 }
 
 .work-history,
 .education,
 .additional-skills {
   padding-top: 12%;
+  padding-bottom: 0;
 }
 
 .about {
@@ -149,6 +164,7 @@ header {
   font-size: 5vw;
   margin: 0;
   padding-bottom: 25px;
+  transition: font-size 0.3s ease; /* Transition for contact header font size */
 }
 
 .contact button {
@@ -162,7 +178,9 @@ header {
   border-color: white;
   border-style: solid;
   border-width: 1px;
+  margin: 0;
   margin-top: 45px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition for button */
 }
 
 .contact button:hover {
@@ -175,7 +193,8 @@ header {
   text-align: left;
   padding-top: 15%;
   padding-bottom: 20%;
-  margin: 0;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 .projects-viewer {
@@ -188,10 +207,16 @@ header {
 }
 
 .projects-list li {
-  border: 1px solid white;
-  padding: 7px 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   cursor: pointer;
-  margin: 10px 10px 0 0;
+  margin: 10px 10px 0px 0px;
+  transition: background-color 0.3s ease; /* Transition for list items */
 }
 
 .projects-list .li--active {
@@ -209,24 +234,31 @@ header {
 }
 
 .project-preview span {
+  padding: 0;
   margin: 10px;
 }
 
 .project-navigator {
   display: inline-flex;
-  align-items: center;
 }
 
 .project-navigator button {
+  position: relative;
+  top: 40%;
   font-family: "Courier";
   background: none;
   cursor: pointer;
   color: white;
-  padding: 12px 15px;
-  border: 1px solid white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
   border-radius: 100%;
   margin: 0;
-  
+  transition: background-color 0.3s ease; /* Transition for button */
 }
 
 .project-navigator button:hover {
@@ -236,23 +268,29 @@ header {
 }
 
 .project-navigator img {
-  width: 600px;
-  height: 280px;
-  object-fit: contain;
-  border: 1.2px solid white;
+  width: 536px;
+  height: 250px;
+  border-style: solid;
+  border-width: 1.7px;
+  border-color: white;
+  transition: transform 0.2s; /* Transition for scaling image */
+}
+
+.project-navigator img:hover {
+  transform: scale(1.25); /* Scale image slightly on hover */
 }
 
 .project-description {
   margin-left: 10px;
   text-align: left;
   line-height: 17px;
+  transition: color 0.3s ease; /* Transition for text color */
 }
 
 .project-description h2 {
   text-align: center;
 }
 
-/* Mobile responsiveness */
 @media only screen and (max-width: 768px) {
   .App {
     margin-left: 5%;
@@ -264,20 +302,14 @@ header {
     padding-bottom: 10px;
   }
 
-  .greeting {
-    padding-top: 70%;
-    padding-bottom: 50%;
+  .job-title {
+    margin: 0;
+    padding-top: 75%;
+    padding-bottom: 85%;
+    font-size: 9vw;
   }
 
-  .greeting h1 {
-    font-size: 10vw;
-  }
-
-  .greeting h3 {
-    font-size: 3.5vw;
-  }
-
-  .greeting p {
+  .job-title h1 {
     font-size: 9vw;
   }
 
@@ -285,14 +317,19 @@ header {
   .work-history,
   .education,
   .additional-skills {
-    margin: 0;
-    padding-top: 20%;
-    padding-bottom: 10%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top: 25%;
+    padding-bottom: 25%;
   }
 
-  .projects { 
-    padding-top: 50%;
-    padding-bottom: 60%;
+  .about {
+    padding-top: 12%;
+  }
+
+  .projects {
+    padding-top: 25%;
+    padding-bottom: 25%;
   }
 
   .projects-list {
@@ -300,32 +337,60 @@ header {
   }
 
   .project-preview {
-    display: block;
-    padding-top: 15%;
+    display: grid;
   }
 
   .project-navigator img {
-    width: 100%;
-    height: auto;
-    
+    width: 326px;
+    height: 150px;
+  }
+
+  .project-navigator button {
+    position: relative;
+    top: 50%;
   }
 
   .project-description {
     text-align: center;
-    font-size: 90%;
+  }
+
+  .project-description h2 {
+    text-align: center;
+  }
+
+  .project-preview span {
+    padding: 0;
+    margin: 10px;
+  }
+
+  .project-preview button {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-width: 1.5px;
+  }
+
+  .project-description {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 80%;
   }
 
   .contact {
     margin: 0;
-    padding-top: 40%;
-    padding-bottom: 20%;
+    margin-top: 40%;
+    margin-bottom: 30%;
+    padding: 0;
+  }
+
+  .contact p {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-bottom: 0;
   }
 
   .contact-header {
-    font-size: 12vw;
-  }
-
-  .contact button {
-    padding: 10px;
+    font-size: 9vw;
   }
 }
