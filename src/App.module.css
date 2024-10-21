@@ -70,7 +70,7 @@ header {
   text-align: center;
   font-size: 5vw;
   padding: 11%;
-  padding-top: 20%;
+  padding-top: 12%;
   padding-bottom: 13%;
   transition: color 0.3s ease; /* Transition for greeting color change */
 }
