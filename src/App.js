@@ -171,7 +171,7 @@ function App() {
                 MySQL and SQLite.
               </p>
               <p>
-                As an digital native, I can quickly gather and learn information
+                As a digital native, I can quickly gather and learn information
                 online and recently, I've been utilizing AI to achieve the same
                 purpose in an even faster pace.
               </p>
