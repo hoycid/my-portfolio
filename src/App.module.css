@@ -1,14 +1,23 @@
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+* {
+  box-sizing: border-box; /* Ensures padding and borders don't cause overflow */
+}
+
 .App {
   color: white;
-  margin: 0;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin: 0 auto; /* Center the app without extra margins */
+  max-width: 100%; /* Ensure app doesn't overflow */
+  padding-left: 8%; /* Use padding instead of margin for responsive spacing */
+  padding-right: 8%;
 }
 
 .icon {
-  width: 50px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  filter: brightness(0) invert(1); /* Makes non-SVG images white */
+  width: 50px;
+  height: auto;
+  filter: brightness(0) invert(1);
 }
 
 ul {
@@ -21,7 +30,6 @@ footer {
   font-size: 10px;
   padding-bottom: 20px;
   text-align: center;
-  font-size: 10px;
 }
 
 .scrollTo {
@@ -32,9 +40,7 @@ footer {
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
   font-size: 13px;
   padding-bottom: 15px;
 }
@@ -53,25 +59,25 @@ header {
   font-family: "Mont light";
   text-align: center;
   font-size: 5vw;
-
   padding: 11%;
-  padding-top: 20%;
+  padding-top: 12%;
   padding-bottom: 13%;
 }
 
 .greeting h1 {
-  font-size: 5.5vw;
+  font-size: 5.5rem;
   display: inline;
   font-family: "Mont";
 }
 
 .greeting h3 {
-  font-size: 0.9vw;
+  font-size: 0.9rem;
   font-family: "Mont light";
 }
 
 .greeting p {
   margin: 0;
+  font-size: 5rem;
 }
 
 .greeting-scrolldown {
@@ -82,16 +88,13 @@ header {
 
 .content {
   border: 0;
-  border-left: 1px;
-  border-style: solid;
-  border-color: white;
+  border-left: 1px solid white;
   padding-left: 15px;
   margin-left: 15px;
 }
 
 .highlight {
   text-align: center;
-  font-style: none;
   margin-top: 35px;
   margin-bottom: 35px;
   font-family: "Mont light";
@@ -107,7 +110,6 @@ header {
   font-family: "Courier";
   font-size: 14px;
   text-align: left;
-
   padding-top: 5%;
   padding-bottom: 10%;
   margin-left: 25%;
@@ -118,7 +120,6 @@ header {
 .education,
 .additional-skills {
   padding-top: 12%;
-  padding-bottom: 0;
 }
 
 .about {
@@ -143,7 +144,6 @@ header {
 
 .contact-header {
   text-align: center;
-
   font-family: "Mont light";
   color: white;
   font-size: 5vw;
@@ -158,14 +158,10 @@ header {
   background: none;
   cursor: pointer;
   color: white;
-
   padding: 2%;
-
   border-color: white;
   border-style: solid;
   border-width: 1px;
-
-  margin: 0;
   margin-top: 45px;
 }
 
@@ -179,8 +175,7 @@ header {
   text-align: left;
   padding-top: 15%;
   padding-bottom: 20%;
-  margin-left: 0%;
-  margin-right: 0%;
+  margin: 0;
 }
 
 .projects-viewer {
@@ -193,17 +188,10 @@ header {
 }
 
 .projects-list li {
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
-
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-
+  border: 1px solid white;
+  padding: 7px 10px;
   cursor: pointer;
-  margin: 10px 10px 0px 0px;
+  margin: 10px 10px 0 0;
 }
 
 .projects-list .li--active {
@@ -221,34 +209,24 @@ header {
 }
 
 .project-preview span {
-  padding: 0;
   margin: 10px;
 }
 
 .project-navigator {
   display: inline-flex;
+  align-items: center;
 }
 
 .project-navigator button {
-  position: relative;
-  top: 40%;
-
   font-family: "Courier";
   background: none;
   cursor: pointer;
   color: white;
-
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
+  padding: 12px 15px;
+  border: 1px solid white;
   border-radius: 100%;
-
   margin: 0;
+  
 }
 
 .project-navigator button:hover {
@@ -258,12 +236,10 @@ header {
 }
 
 .project-navigator img {
-  width: 536px;
-  height: 250px;
-
-  border-style: solid;
-  border-width: 1.7px;
-  border-color: white;
+  width: 600px;
+  height: 280px;
+  object-fit: contain;
+  border: 1.2px solid white;
 }
 
 .project-description {
@@ -276,8 +252,8 @@ header {
   text-align: center;
 }
 
+/* Mobile responsiveness */
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
   .App {
     margin-left: 5%;
     margin-right: 5%;
@@ -288,14 +264,20 @@ header {
     padding-bottom: 10px;
   }
 
-  .job-title {
-    margin: 0;
-    padding-top: 75%;
-    padding-bottom: 85%;
-    font-size: 9vw;
+  .greeting {
+    padding-top: 70%;
+    padding-bottom: 50%;
   }
 
-  .job-title h1 {
+  .greeting h1 {
+    font-size: 10vw;
+  }
+
+  .greeting h3 {
+    font-size: 3.5vw;
+  }
+
+  .greeting p {
     font-size: 9vw;
   }
 
@@ -303,19 +285,14 @@ header {
   .work-history,
   .education,
   .additional-skills {
-    margin-left: 0%;
-    margin-right: 0%;
-    padding-top: 25%;
-    padding-bottom: 25%;
+    margin: 0;
+    padding-top: 20%;
+    padding-bottom: 10%;
   }
 
-  .about {
-    padding-top: 12%;
-  }
-
-  .projects {
-    padding-top: 25%;
-    padding-bottom: 25%;
+  .projects { 
+    padding-top: 50%;
+    padding-bottom: 60%;
   }
 
   .projects-list {
@@ -323,61 +300,32 @@ header {
   }
 
   .project-preview {
-    display: grid;
+    display: block;
+    padding-top: 15%;
   }
 
   .project-navigator img {
-    width: 326px;
-    height: 150px;
-  }
-
-  .project-navigator button {
-    position: relative;
-    top: 50%;
+    width: 100%;
+    height: auto;
+    
   }
 
   .project-description {
     text-align: center;
-  }
-
-  .project-description h2 {
-    text-align: center;
-  }
-
-  .project-preview span {
-    padding: 0;
-    margin: 10px;
-  }
-
-  .project-preview button {
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-
-    border-width: 1.5px;
-  }
-
-  .project-description {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    font-size: 80%;
+    font-size: 90%;
   }
 
   .contact {
     margin: 0;
-    margin-top: 40%;
-    margin-bottom: 30%;
-    padding: 0;
-  }
-
-  .contact p {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    margin-bottom: 0;
+    padding-top: 40%;
+    padding-bottom: 20%;
   }
 
   .contact-header {
-    font-size: 9vw;
+    font-size: 12vw;
+  }
+
+  .contact button {
+    padding: 10px;
   }
 }

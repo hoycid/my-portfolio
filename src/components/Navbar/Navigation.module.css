@@ -1,20 +1,22 @@
 .navigation {
   background-color: #16161c;
   display: flex;
+  justify-content: flex-start; /* Align items from the start, allowing manual spacing */
+  align-items: center; /* Vertically center items */
   color: white;
   position: fixed;
   width: 100%;
-  font-size: 13px;
-  opacity: 90%;
-
-  border: 0;
-  border-bottom: 1px;
-  border-style: solid;
-  border-color: white;
+  font-size: 1rem; /* Scalable font size for better accessibility */
+  opacity: 0.9;
+  border-bottom: 1px solid white;
+  padding: 10px 18%; /* Increase the padding on the left to move items slightly to the right */
+  box-sizing: border-box; /* Ensures padding doesn't exceed width */
 }
 
-.navigation a:hover {
+.navigation a:hover,
+.navigation button:hover {
   color: #2d2e34;
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
 }
 
 .navigation button {
@@ -23,57 +25,58 @@
   border: none;
   font: inherit;
   cursor: pointer;
-  outline: inherit;
-}
-
-.navigation button:hover {
-  color: #2d2e34;
+  outline: none;
 }
 
 .logo {
-  margin-left: 15%;
-  margin-right: 30px;
-  padding: 0px;
-  padding-top: 6px;
   font-weight: 800;
+  margin-right: 30px; /* Add space between logo and menu */
 }
 
 .logo a {
   cursor: pointer;
   text-decoration: none;
   color: white;
-  font-size: 14px;
+  font-size: 1.2rem; /* Increased size for better visibility */
 }
 
 .resume {
   cursor: pointer;
   text-decoration: none;
   color: white;
-
-  position: absolute;
-  padding: 0px;
   padding-top: 6px;
-  right: 15%;
+  position: absolute;
+  right: 15%; /* Keep this aligned on the right */
 }
 
 .menu {
-  padding: 5px;
-  padding-bottom: 7px;
+  padding: 5px 0;
 }
 
+/* Mobile adjustments */
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
   .navigation {
-    font-size: 90%;
+    font-size: 0.8rem; /* Slightly smaller font size on mobile */
+    padding: 10px 5%;
   }
 
   .logo {
-    margin-left: 5%;
-    margin-right: 5%;
-    font-weight: 800;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .logo a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem; /* Increased size for better visibility */
   }
 
   .resume {
     right: 5%;
+    font-size: 0.8rem;
+    line-height: 1.5; /* Adjust for vertical alignment */
+    padding: 5px 0; /* Adjust for consistent padding */
+    /* margin-top: -2px; */ /* Uncomment and adjust if needed */
   }
 }
