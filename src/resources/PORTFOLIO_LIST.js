@@ -9,6 +9,7 @@ const PORTFOLIO_LIST = [
       "A web application that simulates the character leveling and stat system of the video game Elden Ring.",
     technology: "[Javascript, React, NodeJs, ExpressJs, SQLite]",
     link: links.er,
+    github: links.erGithub
   },
   {
     title: "PAGRO Admin",
@@ -17,6 +18,7 @@ const PORTFOLIO_LIST = [
       "A document processing and recording web application for the Provincial Agriculture Office in Malaybalay, Philippines.",
     technology: "[Javascript, NextJS, MongoDB]",
     link: links.pagro,
+    github: links.pagroGithub
   },
   {
     title: "Muzic Landing Page",
@@ -25,6 +27,7 @@ const PORTFOLIO_LIST = [
       "A landing page for Muzic, a music learning center based in Malaybalay, Philippines.",
     technology: "[Javascript, React]",
     link: links.muzic,
+    github: links.muzicGithub
   },
   {
     title: "Portfolio website",
@@ -33,6 +36,7 @@ const PORTFOLIO_LIST = [
       "My personal portolio website to showcase my work history and recent projects.",
     technology: "[Javascript, React]",
     link: links.portfolio,
+    github: links.portfolioGithub
   },
   // {
   //   title: "Food Order App",

@@ -15,9 +15,20 @@ html {
   transition: background-color 0.3s ease; /* Transition for background color */
 }
 
+.icons {
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Vertically center the elements */
+  justify-content: flex-start; /* Align items to the start (you can use space-between or center if needed) */
+  gap: 10px; /* Optional: Adds spacing between the elements */
+}
+
+.icons label {
+  font-size: 80%;
+}
+
 .icon {
-  width: 50px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: auto; /* Maintain aspect ratio */
+  height: 30px;
   filter: brightness(0) invert(1); /* Makes non-SVG images white */
   transition: transform 0.2s; /* Transition for scaling */
 }
@@ -95,7 +106,6 @@ header {
   padding-left: 1%;
   margin: 0;
 }
-
 
 .content {
   border: 0;
@@ -374,4 +384,3 @@ header {
     margin-top: 20px; /* Add space between the image and description */
   }
 }
-

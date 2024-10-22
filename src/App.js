@@ -8,6 +8,8 @@ import PORTFOLIO_LIST from "./resources/PORTFOLIO_LIST";
 
 import { socials } from "./resources/socials";
 
+import images from "./resources/images";
+
 function App() {
   const projectsSection = useRef(null);
   const aboutSection = useRef(null);
@@ -140,13 +142,39 @@ function App() {
                       {projects[currentProjectIndex].technology ||
                         "Not applicable"}
                     </p>
-                    <a
+                    {/* <a
                       href={projects[currentProjectIndex].link || ""}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       {projects[currentProjectIndex].link || ""}
-                    </a>
+                    </a> */}
+                    <div className={classes["icons"]}>
+                      <a
+                        href={projects[currentProjectIndex].github || ""}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          className={classes.icon}
+                          src={images.github}
+                          alt="Github link"
+                        />
+                      </a>
+                      <label>Github</label>
+                      <a
+                        href={projects[currentProjectIndex].link || ""}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          className={classes.icon}
+                          src={images.vercel}
+                          alt="Vercel link"
+                        />
+                      </a>
+                      <label>Vercel</label>
+                    </div>
                   </div>
                 </div>
               </div>

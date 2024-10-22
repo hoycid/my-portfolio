@@ -5,6 +5,7 @@ import muzic from "../assets/images/muzic.webp";
 import github from "../assets/images/github.svg";
 import linkedin from "../assets/images/linkedin.svg";
 import er from "../assets/images/er-character-planner.webp";
+import vercel from "../assets/images/vercel.svg";
 
 const images = {
   foodorder: foodorder,
@@ -14,6 +15,7 @@ const images = {
   github: github,
   linkedin: linkedin,
   er: er,
+  vercel: vercel,
 };
 
 export default images;
