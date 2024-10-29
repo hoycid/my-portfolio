@@ -205,7 +205,7 @@ function App() {
               </p>
             </div>
           </section>
-          <section className={classes["work-history"]}>
+          {/* <section className={classes["work-history"]}>
             <h3>{"my work history"}</h3>
             <div className={classes.content}>
               <h4>2022</h4>
@@ -226,8 +226,8 @@ function App() {
               </div>
               <h4>2019</h4>
             </div>
-          </section>
-          <section className={classes.education}>
+          </section> */}
+          {/* <section className={classes.education}>
             <h3>{"my education"}</h3>
             <div className={classes.content}>
               <h4>Present</h4>
@@ -250,17 +250,8 @@ function App() {
                 </ul>
               </div>
               <h4>2016</h4>
-              {/* <p>Completed courses such as:</p>
-              <div className={classes.content}>
-                <ul>
-                  <li>
-                    React - The Complete Guide (incl Hooks, React Router, Redux)
-                  </li>
-                  <li>NextJS - The Complete Guide</li>
-                </ul>
-              </div> */}
             </div>
-          </section>
+          </section> */}
           <section className={classes["additional-skills"]}>
             <h3>{"my other skills"}</h3>
             <div className={classes.content}>
