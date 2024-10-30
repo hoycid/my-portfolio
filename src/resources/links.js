@@ -8,6 +8,8 @@ const links = {
   muzicGithub: "https://github.com/hoycid/muzic-app",
   er: "https://er-character-planner-teal.vercel.app/",
   erGithub: "https://github.com/hoycid/er-character-planner",
+  fashion: "https://souls.fashion/eldenring",
+  fashionGithub: "https://github.com/hoycid/souls-fashion/tree/main"
 };
 
 export default links;

@@ -4,6 +4,7 @@ import pagro from "../assets/images/pagro.webp";
 import muzic from "../assets/images/muzic.webp";
 import github from "../assets/images/github.svg";
 import linkedin from "../assets/images/linkedin.svg";
+import fashion from "../assets/images/soulsfashion.webp";
 import er from "../assets/images/er-character-planner.webp";
 import vercel from "../assets/images/vercel.svg";
 
@@ -16,6 +17,7 @@ const images = {
   linkedin: linkedin,
   er: er,
   vercel: vercel,
+  fashion: fashion
 };
 
 export default images;
