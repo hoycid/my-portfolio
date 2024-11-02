@@ -20,15 +20,17 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-  const portfolioSection = useRef(null);
+  const greetingSection = useRef(null);
   const aboutSection = useRef(null);
   const knowntechSection = useRef(null);
+  const portfolioSection = useRef(null);
   const contactSection = useRef(null);
+  const footerSection = useRef(null);
 
   const refs = {
-    contact: contactSection,
-    portfolio: portfolioSection,
     about: aboutSection,
+    portfolio: portfolioSection,
+    contact: contactSection,
   };
 
   const [projects, setProjects] = useState([
@@ -75,10 +77,12 @@ function App() {
     }, observerOptions);
 
     const sections = [
+      greetingSection.current,
       aboutSection.current,
       knowntechSection.current,
       portfolioSection.current,
       contactSection.current,
+      footerSection.current,
     ];
     sections.forEach(section => {
       if (section) observer.observe(section);
@@ -108,13 +112,18 @@ function App() {
       <Navigation refs={refs} scrollFtn={scrollToSection} />
 
       <div className={classes["app"]}>
-        <Greeting
-          greeting={content.greeting.salut}
-          intro={content.greeting.intro}
-          first={content.greeting.first}
-          second={content.greeting.second}
-          third={content.greeting.third}
-        />
+        <header
+          ref={greetingSection}
+          className={`${classes["header"]} ${classes["fade-in"]}`}
+        >
+          <Greeting
+            greeting={content.greeting.salut}
+            intro={content.greeting.intro}
+            first={content.greeting.first}
+            second={content.greeting.second}
+            third={content.greeting.third}
+          />
+        </header>
 
         <section
           ref={aboutSection}
@@ -166,12 +175,17 @@ function App() {
           </Section>
         </section>
 
-        <Footer
-          socials={socials}
-          refs={refs}
-          scrollFtn={scrollToSection}
-          scrollToTop={scrollToTop}
-        />
+        <footer
+          ref={footerSection}
+          className={`${classes["footer"]} ${classes["fade-in"]}`}
+        >
+          <Footer
+            socials={socials}
+            refs={refs}
+            scrollFtn={scrollToSection}
+            scrollToTop={scrollToTop}
+          />
+        </footer>
       </div>
       <SpeedInsights />
     </>
