@@ -1,9 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 
-import classes from "./App.module.css";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
-import Navigation from "./components/Navbar/Navigation";
-import ProjectPanel from "./components/ProjectPanel/ProjectPanel";
+import classes from "./App.module.css";
 
 import PORTFOLIO_LIST from "./resources/PORTFOLIO_LIST";
 import content from "./resources/CONTENTOBJ";
@@ -11,6 +10,8 @@ import { socials } from "./resources/socials";
 import { icons } from "./resources/images";
 import { email } from "./resources/socials";
 
+import Navigation from "./components/Navbar/Navigation";
+import ProjectPanel from "./components/ProjectPanel/ProjectPanel";
 import Greeting from "./components/Greeting/Greeting";
 import Section from "./components/Section/Section";
 import Marquee from "./components/Marquee/Marquee";
@@ -170,6 +171,7 @@ function App() {
           scrollToTop={scrollToTop}
         />
       </div>
+      <SpeedInsights />
     </>
   );
 }
