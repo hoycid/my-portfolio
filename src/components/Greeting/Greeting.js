@@ -8,7 +8,7 @@ const Greeting = props => {
   const third = props.third;
 
   return (
-    <header className={classes["greeting"]}>
+    <div className={classes["greeting"]}>
       <h2>{greeting}</h2>
       <h1>{intro}</h1>
       <div className={classes["subheader"]}>
@@ -22,7 +22,7 @@ const Greeting = props => {
           {third}
         </p>
       </div>
-    </header>
+    </div>
   );
 };
 
