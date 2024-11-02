@@ -20,7 +20,8 @@
   grid-template-rows: auto;
   grid-template-areas:
     "title image"
-    "desc links"
+    "title links"
+    "desc desc"
     "tech tech";
   padding: 2rem;
   gap: 2rem;
@@ -47,7 +48,7 @@
 }
 
 .title h3 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .title p {
