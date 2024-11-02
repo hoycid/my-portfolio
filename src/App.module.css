@@ -131,39 +131,6 @@ footer {
     padding-right: 1rem; /* Reduce padding */
   }
 
-  .greeting {
-    padding: 1rem; /* Reduce padding */
-    height: auto; /* Allow height to adjust */
-  }
-
-  .greeting h1 {
-    font-size: 4rem; /* Smaller font size for mobile */
-  }
-
-  .greeting h2 {
-    font-size: 3rem; /* Smaller font size for mobile */
-  }
-
-  .greeting p {
-    font-size: 0.875rem; /* Smaller font size for mobile */
-  }
-
-  .subheader {
-    grid-template-columns: 1fr 1fr; /* Stack columns vertically */
-    grid-template-areas:
-      "first second"
-      "third third";
-
-    margin-top: 1rem; /* Reduce top margin */
-  }
-
-  .first,
-  .second,
-  .third {
-    padding: 0.5rem; /* Reduce padding */
-    text-align: center; /* Center text for better readability */
-  }
-
   .knowntech {
     padding: 1rem; /* Reduce padding */
     flex-direction: column; /* Stack items vertically */
