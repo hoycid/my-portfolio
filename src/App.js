@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 
-import { SpeedInsights } from '@vercel/speed-insights/react';
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import classes from "./App.module.css";
 
@@ -97,7 +97,9 @@ function App() {
         key !== "github" &&
         key !== "vercel" &&
         key !== "linkedin" &&
-        key !== "newtab"
+        key !== "newtab" &&
+        key !== "menu" &&
+        key !== "close"
     )
     .map(([, value]) => value);
 
