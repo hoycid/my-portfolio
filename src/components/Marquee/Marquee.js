@@ -8,6 +8,12 @@ const Marquee = props => {
       {Object.entries(images).map(([key, src], index) => {
         return <img key={index} src={src} alt={key} />;
       })}
+      {Object.entries(images).map(([key, src], index) => {
+        return <img key={index} src={src} alt={key} />;
+      })}
+      {Object.entries(images).map(([key, src], index) => {
+        return <img key={index} src={src} alt={key} />;
+      })}
     </div>
   );
 };

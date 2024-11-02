@@ -1,5 +1,5 @@
 .marquee {
-  animation: marquee 4s linear infinite alternate;
+  animation: marquee 10s linear infinite;
   width: 100%;
   display: inline-flex;
   gap: 4rem;
@@ -17,10 +17,10 @@
 
 @keyframes marquee {
   from {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   to {
-    transform: translateX(-15%);
+    transform: translateX(-88%);
   }
 }
 
