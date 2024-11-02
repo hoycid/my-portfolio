@@ -8,26 +8,7 @@ body {
 
 @font-face {
   font-display: swap;
-  font-family: "Mont light";
-  src: local("Mont light"),
-    url(./assets/fonts/Mont/Mont-ExtraLightDEMO.otf) format("truetype");
-}
-
-@font-face {
-  font-display: swap;
   font-family: "Mont";
   src: local("Mont"),
     url(./assets/fonts/Mont/Mont-HeavyDEMO.otf) format("truetype");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Courier";
-  src: local("Courier"),
-    url(./assets/fonts/Courier/CourierPrime-Regular.ttf) format("truetype");
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
