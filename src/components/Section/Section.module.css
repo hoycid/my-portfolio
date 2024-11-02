@@ -1,0 +1,74 @@
+:root {
+  --border-width: 0.1rem;
+  --border-color: rgb(0, 0, 0);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "tag content"
+    "title content"
+    "subtitle content";
+  gap: 2rem;
+  border-top: var(--border-width) solid var(--border-color);
+  padding: 1.5rem;
+}
+
+.tag {
+  grid-area: tag;
+  font-size: 1rem;
+}
+
+.title {
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.title h3 {
+  margin: 0.5rem;
+  font-size: 3rem;
+}
+
+.subtitle {
+  grid-area: subtitle;
+  font-size: 1rem;
+  margin: 0.5rem;
+  margin-top: 0;
+}
+
+.content {
+  grid-area: content;
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 928px) {
+  .container {
+    grid-template-columns: 1fr; /* Change to a single-column layout */
+    grid-template-areas:
+      "tag"
+      "title"
+      "subtitle"
+      "content"; /* Stack elements vertically */
+    gap: 1rem; /* Reduce gap between elements */
+    padding: 1rem; /* Decrease padding for mobile */
+  }
+
+  .tag {
+    font-size: 0.9rem; /* Slightly smaller font size for mobile */
+  }
+
+  .title h3 {
+    font-size: 2.5rem; /* Smaller heading size for mobile */
+    margin: 0.3rem; /* Adjust margin for smaller screens */
+  }
+
+  .subtitle {
+    font-size: 0.9rem; /* Smaller subtitle font size for mobile */
+    margin: 0.3rem; /* Adjust margin for smaller screens */
+  }
+}

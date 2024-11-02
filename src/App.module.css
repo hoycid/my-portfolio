@@ -1,386 +1,180 @@
-html {
-  scroll-behavior: smooth; /* Enable smooth scrolling */
-}
-
 * {
-  box-sizing: border-box; /* Ensures padding and borders don't cause overflow */
+  /* border: 0.01rem solid #333; */
+  font-family: Helvetica;
+  user-select: none;
+  background-color: transparent;
 }
 
-.App {
-  color: white;
-  margin: 0 auto; /* Center the app without extra margins */
-  max-width: 100%; /* Ensure app doesn't overflow */
-  padding-left: 5%; /* Use padding instead of margin for responsive spacing */
-  padding-right: 5%;
-  transition: background-color 0.3s ease; /* Transition for background color */
+:root {
+  --border-width: 0.1rem;
+  --border-color: rgb(0, 0, 0);
 }
 
-.icons {
-  display: flex; /* Enables flexbox layout */
-  align-items: center; /* Vertically center the elements */
-  justify-content: flex-start; /* Align items to the start (you can use space-between or center if needed) */
-  gap: 10px; /* Optional: Adds spacing between the elements */
-}
-
-.icons label {
-  font-size: 80%;
-}
-
-.icon {
-  width: auto; /* Maintain aspect ratio */
-  height: 30px;
-  filter: brightness(0) invert(1); /* Makes non-SVG images white */
-  transition: transform 0.2s; /* Transition for scaling */
-}
-
-.icon:hover {
-  transform: scale(1.15); /* Scale up icon slightly on hover */
-}
-
-ul {
+html,
+body {
+  margin: 0;
   padding: 0;
-  list-style-type: none;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #efebe8;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+p {
+  transition: transform 0.5s ease;
+}
+
+h1:hover,
+h2:hover,
+h3:hover,
+p:hover {
+  transform: scale(1.1);
+}
+
+h3 {
+  font-family: "Mont";
+  font-size: 2.5rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.header {
+  grid-area: greeting;
 }
 
 footer {
-  font-family: "Courier";
-  font-size: 10px;
-  padding-bottom: 20px;
-  text-align: center;
-  transition: font-size 0.3s ease; /* Transition for font size change */
+  grid-area: footer;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.scrollTo {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  font-size: 13px;
-  padding-bottom: 15px;
-  transition: color 0.3s ease; /* Transition for color change */
+.icon {
+  width: 4rem;
+  height: 4rem;
+  filter: brightness(0) invert(1);
 }
 
-.scrollTo:hover {
-  color: #2d2e34;
-}
-
-header {
-  margin: 0;
-  padding: 0;
-}
-
-.greeting {
-  color: white;
-  font-family: "Mont light";
-  text-align: center;
-  font-size: 5vw;
-  padding: 11%;
-  padding-top: 12%;
-  padding-bottom: 13%;
-  transition: color 0.3s ease; /* Transition for greeting color change */
-}
-
-.greeting h1 {
-  font-size: 5.5vw;
-  display: inline;
-  font-family: "Mont";
-}
-
-.greeting h3 {
-  font-size: 0.9vw;
-  font-family: "Mont light";
-}
-
-.greeting p {
-  margin: 0;
-}
-
-.greeting-scrolldown {
-  text-align: left;
-  padding-left: 1%;
-  margin: 0;
-}
-
-.content {
-  border: 0;
-  border-left: 1px solid white;
-  padding-left: 15px;
-  margin-left: 15px;
-  transition: border-color 0.3s ease; /* Transition for border color change */
-}
-
-.highlight {
-  text-align: center;
-  font-style: none;
-  margin-top: 35px;
-  margin-bottom: 35px;
-  font-family: "Mont light";
-  line-height: 17px;
-  transition: margin 0.3s ease; /* Transition for margin changes */
-}
-
-.about,
-.projects,
-.work-history,
-.education,
-.additional-skills,
-.contact {
-  font-family: "Courier";
-  font-size: 14px;
-  text-align: left;
-  padding-top: 5%;
-  padding-bottom: 10%;
-  margin-left: 25%;
-  margin-right: 25%;
-  transition: margin 0.3s ease; /* Transition for margin changes */
-}
-
-.work-history,
-.education,
-.additional-skills {
-  padding-top: 12%;
-  padding-bottom: 0;
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "greeting greeting"
+    "greeting greeting"
+    "about about"
+    "tech tech"
+    "projects projects"
+    "contact contact"
+    "footer footer";
+  padding-left: 12rem;
+  padding-right: 12rem;
+  margin-top: 2rem;
 }
 
 .about {
-  text-align: justify;
-  font-size: 13px;
-  line-height: 25px;
-  padding-top: 15%;
-  padding-bottom: 15%;
+  grid-area: about;
+  grid-column: 1 / -1; /* Span the entire row */
+  display: grid;
+  grid-template-columns: 1fr; /* Project panels span single-column */
 }
 
-.education {
-  margin-right: 20%;
-}
-
-.contact {
-  padding-top: 12%;
-  padding-bottom: 13%;
-  margin-left: 15%;
-  margin-right: 15%;
-  text-align: center;
-}
-
-.contact-header {
-  text-align: center;
-  font-family: "Mont light";
-  color: white;
-  font-size: 5vw;
-  margin: 0;
-  padding-bottom: 25px;
-  transition: font-size 0.3s ease; /* Transition for contact header font size */
-}
-
-.contact button {
-  text-align: center;
-  font-family: "Courier";
-  font-size: 100%;
-  background: none;
-  cursor: pointer;
-  color: white;
-  padding: 2%;
-  border-color: white;
-  border-style: solid;
-  border-width: 1px;
-  margin: 0;
-  margin-top: 45px;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transition for button */
-}
-
-.contact button:hover {
-  background-color: white;
-  border-color: black;
-  color: black;
+.knowntech {
+  grid-area: tech;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  border-top: var(--border-width) solid var(--border-color);
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .projects {
-  text-align: left;
-  padding-top: 15%;
-  padding-bottom: 20%;
-  margin-left: 0%;
-  margin-right: 0%;
-}
-
-.projects-viewer {
-  display: flex;
-}
-
-.projects-list {
-  margin-right: 5%;
+  grid-area: projects;
+  grid-column: 1 / -1;
   display: grid;
+  grid-template-columns: 1fr;
 }
 
-.projects-list li {
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  cursor: pointer;
-  margin: 10px 10px 0px 0px;
-  transition: background-color 0.3s ease; /* Transition for list items */
+.contact {
+  grid-area: contact;
+  grid-column: 1 / -1; /* Span the entire row */
+  display: grid;
+  grid-template-columns: 1fr; /* Project panels span single-column */
 }
 
-.projects-list .li--active {
-  background-color: white;
-  color: black;
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-out, transform 0.8s ease-out;
 }
 
-.projects-list li:hover {
-  background: #2d2e34;
-  color: white;
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.project-preview {
-  display: flex;
-}
-
-.project-preview span {
-  padding: 0;
-  margin: 10px;
-}
-
-.project-navigator {
-  display: inline-flex;
-}
-
-.project-navigator button {
-  position: relative;
-  top: 40%;
-  font-family: "Courier";
-  background: none;
-  cursor: pointer;
-  color: white;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
-  border-radius: 100%;
-  margin: 0;
-  transition: background-color 0.3s ease; /* Transition for button */
-  z-index: 1000; /* Ensure it stays on top */
-}
-
-.project-navigator button:hover {
-  background-color: white;
-  border-color: black;
-  color: black;
-}
-
-.project-navigator img {
-  width: 536px;
-  height: 250px;
-  border-style: solid;
-  border-width: 2.2px;
-  border-color: white;
-  transition: transform 0.2s; /* Transition for scaling image */
-}
-
-.project-navigator img:hover {
-  transform: scale(1.25); /* Scale image slightly on hover */
-}
-
-.project-description {
-  margin-left: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
-  text-align: left;
-  line-height: 17px;
-  transition: color 0.3s ease; /* Transition for text color */
-}
-
-.project-description h2 {
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .App {
-    padding-left: 2%; /* Reduce padding for smaller screens */
-    padding-right: 2%;
+/* Media Query for mobile devices */
+@media (max-width: 928px) {
+  .app {
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+    padding-left: 1rem; /* Reduce padding */
+    padding-right: 1rem; /* Reduce padding */
   }
 
   .greeting {
-    font-size: 8vw; /* Adjust font size for mobile */
-    padding: 5%; /* Reduce padding */
-    padding-top: 65%;
-    padding-bottom: 50%;
+    padding: 1rem; /* Reduce padding */
+    height: auto; /* Allow height to adjust */
   }
 
   .greeting h1 {
-    font-size: 9vw; /* Adjust font size for mobile */
+    font-size: 4rem; /* Smaller font size for mobile */
   }
 
-  .greeting h3 {
-    font-size: 2.5vw; /* Adjust font size for mobile */
+  .greeting h2 {
+    font-size: 3rem; /* Smaller font size for mobile */
   }
 
-  .greeting-scrolldown {
-    align-items: center;
-    text-align: center;
-    padding-bottom: 25%;
+  .greeting p {
+    font-size: 0.875rem; /* Smaller font size for mobile */
   }
 
-  .about,
-  .projects,
-  .work-history,
-  .education,
-  .additional-skills,
-  .contact {
-    font-size: 12px; /* Adjust font size for mobile */
-    margin-left: 5%; /* Reduce margins */
-    margin-right: 5%;
-    padding-top: 40%;
-    padding-bottom: 40%;
+  .subheader {
+    grid-template-columns: 1fr 1fr; /* Stack columns vertically */
+    grid-template-areas:
+      "first second"
+      "third third";
+
+    margin-top: 1rem; /* Reduce top margin */
   }
 
-  .contact-header {
-    font-size: 12vw; /* Adjust font size for mobile */
+  .first,
+  .second,
+  .third {
+    padding: 0.5rem; /* Reduce padding */
+    text-align: center; /* Center text for better readability */
   }
 
-  .contact button {
-    font-size: 90%; /* Adjust font size for mobile */
-    padding: 5%; /* Adjust padding for mobile */
+  .knowntech {
+    padding: 1rem; /* Reduce padding */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
   }
 
-  .projects-viewer {
-    flex-direction: column; /* Stack projects vertically on mobile */
+  .projects {
+    grid-template-columns: 1fr; /* Ensure single-column layout */
   }
 
-  .projects-list {
-    display: block; /* Switch to block display for smaller screens */
-  }
-
-  .projects-list li {
-    margin: 5px 0; /* Adjust margin for list items */
-    padding: 5px; /* Adjust padding for list items */
-  }
-
-  .project-navigator button {
-    display: none;
-  }
-
-  .project-navigator img {
-    width: 100%; /* Make image take up the full width */
-    height: auto; /* Maintain aspect ratio */
-    display: none;
-    margin: 0 auto; /* Center the image */
-  }
-
-  .project-description {
-    margin: 0;
-    width: 100%; /* Make description take up full width */
-    margin-top: 20px; /* Add space between the image and description */
+  footer {
+    padding: 1rem; /* Add padding for better touch targets */
   }
 }

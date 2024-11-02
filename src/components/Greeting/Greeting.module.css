@@ -1,0 +1,94 @@
+.greeting {
+  grid-area: greeting;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  height: 36rem;
+}
+
+.greeting h1,
+.greeting h2,
+.greeting p {
+  margin: 0;
+}
+
+.greeting h1 {
+  font-size: 6.5rem;
+  margin-bottom: 2rem;
+}
+.greeting h2 {
+  font-size: 5rem;
+}
+.greeting p {
+  font-size: 1rem;
+}
+
+.subheader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "first second third";
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.first,
+.second,
+.third {
+  text-align: left;
+}
+
+.first {
+  grid-area: first;
+  border-top: var(--border-width) solid var(--border-color);
+  padding: 1rem;
+}
+
+.second {
+  border-top: var(--border-width) solid var(--border-color);
+  grid-area: second;
+  padding: 1rem;
+}
+
+.third {
+  border-top: var(--border-width) solid var(--border-color);
+  grid-area: third;
+  padding: 1rem;
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 928px) {
+  .greeting {
+    padding: 1rem; /* Reduce padding */
+    height: auto; /* Allow height to adjust */
+  }
+
+  .greeting h1 {
+    font-size: 4rem; /* Smaller font size for mobile */
+  }
+
+  .greeting h2 {
+    font-size: 3rem; /* Smaller font size for mobile */
+  }
+
+  .greeting p {
+    font-size: 0.875rem; /* Smaller font size for mobile */
+  }
+
+  .subheader {
+    grid-template-columns: 1fr 1fr; /* Stack columns vertically */
+    grid-template-areas:
+      "first second"
+      "third third";
+
+    margin-top: 1rem; /* Reduce top margin */
+  }
+
+  .first,
+  .second,
+  .third {
+    padding: 0.5rem; /* Reduce padding */
+    text-align: center; /* Center text for better readability */
+  }
+}

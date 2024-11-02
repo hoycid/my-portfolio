@@ -1,0 +1,29 @@
+:root {
+  --border-width: 0.1rem;
+  --border-color: rgb(0, 0, 0);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-top: var(--border-width) solid var(--border-color);
+  padding: 1.5rem;
+}
+
+.tag {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 928px) {
+  .container {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .tag {
+    font-size: 0.875rem; /* Smaller font size for tags */
+    padding: 0.5rem 0; /* Add some padding for better touch targets */
+  }
+}

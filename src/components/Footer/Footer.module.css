@@ -1,0 +1,119 @@
+:root {
+  --border-width: 0.1rem;
+  --border-color: rgb(0, 0, 0);
+}
+
+.icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  filter: brightness(0) invert(0);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-top: var(--border-width) solid var(--border-color);
+}
+
+.nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Ensure full width for alignment */
+}
+
+.socials {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.social label {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.social:hover {
+  transform: scale(1.2);
+}
+
+.links {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.link {
+  all: unset;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright button {
+  all: unset;
+  margin: 2rem;
+}
+
+.copyright button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 928px) {
+  .footer {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .nav {
+    flex-direction: column; /* Stack nav items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .socials {
+    gap: 1.5rem; /* Reduce gap between social icons */
+  }
+
+  .links {
+    gap: 1.5rem; /* Reduce gap between links */
+    flex-wrap: wrap; /* Allow links to wrap */
+    margin-bottom: 1rem;
+  }
+
+  .copyright {
+    text-align: center; /* Center text for better readability */
+  }
+
+  .copyright button {
+    margin: 1rem; /* Reduce margin for buttons */
+  }
+
+  .icon {
+    width: 1.8rem; /* Smaller icon size for mobile */
+    height: 1.8rem; /* Maintain aspect ratio */
+  }
+}
