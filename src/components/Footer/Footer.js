@@ -9,20 +9,22 @@ const Footer = props => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className={classes.footer}>
+    <div className={classes.footer}>
       <div className={classes.nav}>
         <div className={classes.links}>
-          {Object.entries(refs).reverse().map(([name, ref], key) => (
-            <button
-              className={classes.link}
-              key={key}
-              onClick={() => {
-                scrollFtn(ref);
-              }}
-            >
-              {name}
-            </button>
-          ))}
+          {Object.entries(refs)
+            .reverse()
+            .map(([name, ref], key) => (
+              <button
+                className={classes.link}
+                key={key}
+                onClick={() => {
+                  scrollFtn(ref);
+                }}
+              >
+                {name}
+              </button>
+            ))}
         </div>
         <div className={classes.socials}>
           {Object.entries(socials)
@@ -51,7 +53,7 @@ const Footer = props => {
         </button>
         <p>Cidrex Quilang. All pies reserved {currentYear}.</p>
       </div>
-    </footer>
+    </div>
   );
 };
 
