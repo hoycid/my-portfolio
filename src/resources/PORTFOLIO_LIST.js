@@ -55,7 +55,7 @@ const PORTFOLIO_LIST = [
     title: "PAGRO Admin",
     image: images.pagro,
     description:
-      "This web application is designed for the Provincial Agriculture Office in Malaybalay, Philippines, focusing on document processing and recording. The application streamlines workflows by providing an efficient platform for managing agricultural documents. Its user-friendly interface and robust functionality enable staff to easily record, track, and retrieve essential information, enhancing productivity and supporting the office's day to day operations. The site was built with Next.js, which simplified the development as it allowed me to handle API requests directly within the framework. It's serverless setup also made deploying it on Vercel easier.",
+      "This web application is designed for the Provincial Agriculture Office in Malaybalay, Philippines, focusing on document processing and recording. The application streamlines workflows by providing an efficient platform for managing agricultural documents. Its user-friendly interface and robust functionality enable staff to easily record, track, and retrieve essential information, enhancing productivity and supporting the office's day to day operations. The site was built with Next.js, which simplified the development as it allowed me to handle API requests directly within the framework.",
     technology: {
       javascript: icons.js,
       nextjs: icons.nextjs,
