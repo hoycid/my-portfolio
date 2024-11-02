@@ -49,7 +49,7 @@ const Navigation = props => {
           ))}
       </div>
       <button className={classes[`menu-button`]} onClick={toggleSidebar}>
-        <img className={classes.icon} src={icons.menu} />
+        <img className={classes.icon} src={icons.menu} alt="menu"/>
       </button>
 
       <div
@@ -63,7 +63,7 @@ const Navigation = props => {
           }
           onClick={toggleSidebar}
         >
-          <img className={classes.icon} src={icons.close} />
+          <img className={classes.icon} src={icons.close} alt="close"/>
         </button>
         <div
           className={
