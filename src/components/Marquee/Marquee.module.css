@@ -27,7 +27,7 @@
 /* Media Query for mobile devices */
 @media (max-width: 928px) {
   .marquee {
-    animation: marquee 6s linear infinite alternate; /* Slower animation for better readability */
+    animation: marquee 6s linear infinite; /* Slower animation for better readability */
     gap: 2rem; /* Reduce gap between images */
   }
 
