@@ -45,17 +45,6 @@ p {
   line-height: 1.5rem;
 }
 
-.header {
-  grid-area: greeting;
-}
-
-footer {
-  grid-area: footer;
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
 .icon {
   width: 4rem;
   height: 4rem;
@@ -77,6 +66,10 @@ footer {
   padding-left: 12rem;
   padding-right: 12rem;
   margin-top: 2rem;
+}
+
+.header {
+  grid-area: greeting;
 }
 
 .about {
@@ -109,6 +102,13 @@ footer {
   grid-column: 1 / -1; /* Span the entire row */
   display: grid;
   grid-template-columns: 1fr; /* Project panels span single-column */
+}
+
+.footer {
+  grid-area: footer;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .fade-in {
