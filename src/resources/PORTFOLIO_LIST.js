@@ -13,7 +13,7 @@ const PORTFOLIO_LIST = [
     github: links.fashionGithub,
   },
   {
-    title: "Elden Ring Character Planner (WIP)",
+    title: "Elden Ring Character Planner",
     image: images.er,
     description:
       "This web application simulates the character leveling and stat system of the popular video game Elden Ring, allowing players to strategise and optimise their builds in a user-friendly environment. Users can experiment with different character attributes and see how each choice impacts their gameplay, making it an invaluable tool for both new and seasoned players looking to maximise their potential in the game both in PvE and PvP. The site was built with react and closely follows a component-based architecture and fetches and saves data through an ExpressJs API and to a NodeJs server deployed in Railway.app.",
