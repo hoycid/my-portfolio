@@ -35,7 +35,7 @@
 .container h2:hover,
 .container h3:hover,
 .container p:hover {
-  transform: scale(1);
+  transform: scale(1.02);
 }
 
 .title {
