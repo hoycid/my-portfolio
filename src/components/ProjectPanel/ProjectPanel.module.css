@@ -48,7 +48,8 @@
 }
 
 .title h3 {
-  font-size: 4rem;
+  /* font-size: 4rem; */
+  font-size: 4vw; 
 }
 
 .title p {
@@ -180,6 +181,7 @@
   .image {
     border-radius: 0.5rem; /* Reduce border radius for mobile */
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1); /* Adjust shadow for mobile */
+    justify-self: center;
   }
 
   .tech-used {
