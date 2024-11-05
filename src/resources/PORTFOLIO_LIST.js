@@ -7,7 +7,7 @@ const PORTFOLIO_LIST = [
     title: "Souls Fashion",
     image: images.fashion,
     description:
-      "Fashion Souls is a stylish fashion tool for the SoulsBorne community, developed by Psyopgirl. As a contributing front-end developer and designer, I focused on crafting a seamless user experience by applying UI/UX principles. The project utilized vanilla JavaScript for the interface, while Python managed image and file processing on the back end. The creator and I are currently working on further developments, with additions such as an outfit system on the way. The site has received a fantastic response, averaging about 30,000 visits daily, which speaks volumes about its utility and popularity among fans.",
+      "Fashion Souls is an interactive fashion tool for the SoulsBorne community, developed by Psyopgirl. As a contributing front-end developer and designer, I developed a UI overhaul for the site with a focus on instinctive user experience and UI/UX principles. The project utilized vanilla JavaScript for the interface, while Python managed image and file processing on the back end. On top of contributing further bugfixes, the creator and I are currently working on further developments, with features such as an outfit system on the way. The site has received a fantastic response, averaging about 30,000 visits daily, which speaks volumes about its utility and popularity among fans.",
     technology: { javascript: icons.js, python: icons.python },
     link: links.fashion,
     github: links.fashionGithub,
@@ -16,7 +16,7 @@ const PORTFOLIO_LIST = [
     title: "Elden Ring Character Planner",
     image: images.er,
     description:
-      "This web application simulates the character leveling and stat system of the popular video game Elden Ring, allowing players to strategise and optimise their builds in a user-friendly environment. Users can experiment with different character attributes and see how each choice impacts their gameplay, making it an invaluable tool for both new and seasoned players looking to maximise their potential in the game both in PvE and PvP. The site was built with react and closely follows a component-based architecture and fetches and saves data through an ExpressJs API and to a NodeJs server deployed in Railway.app.",
+      "This web application simulates the character leveling and stat system of the popular video game Elden Ring, allowing players to strategize and optimize their builds in a user-friendly environment. Users can experiment with different character attributes and see how each choice impacts gameplay, making it an invaluable tool for both new and seasoned players aiming to maximize their potential in both PvE and PvP. Built with React, the application follows a component-based architecture. Data is fetched from two APIs: one for storing character presets and another for populating item data. The first API was built with Express.js as middleware for a Node.js server, deployed on Railway.app. The second API is an open-source API developed by Delition.",
     technology: {
       javascript: icons.js,
       react: icons.react,
