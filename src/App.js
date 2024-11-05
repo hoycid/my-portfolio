@@ -115,7 +115,7 @@ function App() {
     <>
       <Navigation refs={refs} scrollFtn={scrollToSection} />
 
-      <div className={classes["app"]}>
+      <main className={classes["app"]}>
         <header
           ref={greetingSection}
           className={`${classes["header"]} ${classes["fade-in"]}`}
@@ -134,8 +134,10 @@ function App() {
         <section
           ref={aboutSection}
           className={`${classes["about"]} ${classes["fade-in"]}`}
+          aria-labelledby="about"
         >
           <Section
+            id="about"
             tag={content.about.tag}
             title={content.about.title}
             subtitle={content.about.subtitle}
@@ -145,6 +147,7 @@ function App() {
         <section
           ref={knowntechSection}
           className={`${classes["knowntech"]} ${classes["fade-in"]}`}
+          aria-labelledby="knowntech"
         >
           <Marquee images={knownTechIcons} />
         </section>
@@ -152,8 +155,9 @@ function App() {
         <section
           ref={portfolioSection}
           className={`${classes["projects"]} ${classes["fade-in"]}`}
+          aria-labelledby="portfolio"
         >
-          <Panel tag={content.portfolio.tag}>
+          <Panel id="portfolio" tag={content.portfolio.tag}>
             {projects.map((project, index) => (
               <ProjectPanel
                 key={index}
@@ -171,8 +175,10 @@ function App() {
         <section
           ref={contactSection}
           className={`${classes["contact"]} ${classes["fade-in"]}`}
+          aria-labelledby="contact"
         >
           <Section
+            id="contact"
             tag={content.contact.tag}
             title={content.contact.title}
             subtitle={content.contact.subtitle}
@@ -192,7 +198,8 @@ function App() {
             scrollToTop={scrollToTop}
           />
         </footer>
-      </div>
+      </main>
+
       <SpeedInsights />
     </>
   );
