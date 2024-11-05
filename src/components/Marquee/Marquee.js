@@ -6,13 +6,20 @@ const Marquee = props => {
   return (
     <div className={classes.marquee}>
       {Object.entries(images).map(([key, src], index) => {
-        return <img key={index} src={src} alt={key} />;
+        return (
+          <div className={classes.item}>
+            <img key={index} src={src} alt={key} />
+            <label>{key}</label>
+          </div>
+        );
       })}
       {Object.entries(images).map(([key, src], index) => {
-        return <img key={index} src={src} alt={key} />;
-      })}
-      {Object.entries(images).map(([key, src], index) => {
-        return <img key={index} src={src} alt={key} />;
+        return (
+          <div className={classes.item}>
+            <img key={index} src={src} alt={key} />
+            <label>{key}</label>
+          </div>
+        );
       })}
     </div>
   );

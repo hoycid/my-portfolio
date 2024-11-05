@@ -11,8 +11,28 @@
   transition: transform 0.3s ease;
 }
 
-.marquee img:hover {
+/* .marquee img:hover {
   transform: scale(1.3);
+} */
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.item label {
+  margin-left: 0.5rem;
+}
+
+.item:hover {
+  transform: scale(1.2);
 }
 
 @keyframes marquee {
