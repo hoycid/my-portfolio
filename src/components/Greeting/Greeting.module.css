@@ -123,4 +123,13 @@
     padding: 0.5rem; /* Reduce padding */
     text-align: center; /* Center text for better readability */
   }
+
+  .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    align-items: flex-start;
+  }
 }
