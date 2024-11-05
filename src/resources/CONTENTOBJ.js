@@ -23,7 +23,7 @@ const CONTENTOBJ = {
   contact: {
     tag: "contact",
     title: "Let's get in touch!",
-    subtitle: `I’m open to any interesting opportunity, let’s get in touch! You may reach out to me through email: ${email} or phone ${phone}`,
+    subtitle: `I’m open to any interesting opportunity, let’s get in touch! You may reach out to me through email: ${email} or phone ${phone}.`,
   },
 };
 
