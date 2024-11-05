@@ -1,7 +1,6 @@
 * {
   /* border: 0.01rem solid #333; */
   font-family: Helvetica;
-  user-select: none;
   background-color: transparent;
 }
 
@@ -20,6 +19,12 @@ body {
 html {
   background-color: #efebe8;
   color: black;
+}
+
+h1,
+h2,
+h3 {
+  user-select: none;
 }
 
 h1,
