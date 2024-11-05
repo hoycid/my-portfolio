@@ -2,13 +2,15 @@ import classes from "./Contact.module.css";
 
 const Contact = props => {
   const socials = props.socials;
+  const email = props.email;
+
   const mailHandler = email => {
     window.open(`mailto:${email}?`);
   };
 
   return (
     <div className={classes.container}>
-      <button onClick={mailHandler}>Send an email</button>
+      <button onClick={() => mailHandler(email)}>Send an email</button>
       <p>or</p>
       <h2>Message me on any of my socials</h2>
       <div className={classes.socials}>
