@@ -43,12 +43,16 @@
 /* Media Query for mobile devices */
 @media (max-width: 928px) {
   .marquee {
-    animation: marquee 6s linear infinite; /* Slower animation for better readability */
+    animation: marquee 10s linear infinite; /* Slower animation for better readability */
     gap: 2rem; /* Reduce gap between images */
   }
 
-  .marquee img {
-    width: 3rem; /* Smaller image size for mobile */
-    height: 3rem; /* Maintain aspect ratio */
+  @keyframes marquee {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-420%);
+    }
   }
 }
