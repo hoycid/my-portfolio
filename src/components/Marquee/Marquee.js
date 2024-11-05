@@ -7,24 +7,24 @@ const Marquee = props => {
     <div className={classes.marquee}>
       {Object.entries(images).map(([key, src], index) => {
         return (
-          <div className={classes.item}>
-            <img key={index} src={src} alt={key} />
+          <div key={index} className={classes.item}>
+            <img src={src} alt={key} />
             <label>{key}</label>
           </div>
         );
       })}
       {Object.entries(images).map(([key, src], index) => {
         return (
-          <div className={classes.item}>
-            <img key={index} src={src} alt={key} />
+          <div key={index} className={classes.item}>
+            <img src={src} alt={key} />
             <label>{key}</label>
           </div>
         );
       })}
       {Object.entries(images).map(([key, src], index) => {
         return (
-          <div className={classes.item}>
-            <img key={index} src={src} alt={key} />
+          <div key={index} className={classes.item}>
+            <img src={src} alt={key} />
             <label>{key}</label>
           </div>
         );
