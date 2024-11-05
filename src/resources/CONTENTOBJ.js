@@ -5,7 +5,7 @@ const CONTENTOBJ = {
     salut: "Hello there!",
     intro: "I'm Cid",
     first:
-      "I'm a web developer with an emphasis on front-end development, specifically with React.",
+      "I'm a web developer with an emphasis on front-end development using modern web frameworks and libaries.",
     second:
       "Currently, I am focused on developing a strong full-stack skill set to enhance my creative capabilities.",
     third:
