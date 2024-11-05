@@ -1,9 +1,11 @@
+import { email, phone } from "./socials";
+
 const CONTENTOBJ = {
   greeting: {
     salut: "Hello there!",
     intro: "I'm Cid",
     first:
-      "I'm a dedicated web developer with a passion for creating modern and functional web applications.",
+      "I'm a web developer with an emphasis on front-end development, specifically with React.",
     second:
       "Currently, I am focused on developing a strong full-stack skill set to enhance my creative capabilities.",
     third:
@@ -11,9 +13,9 @@ const CONTENTOBJ = {
   },
   about: {
     tag: "about",
-    title: "Creating modern and functional web applications",
+    title: "Creating modern web applications with React",
     subtitle:
-      "I am primarily skilled in the MERN stack, but I also have experience with other web development frameworks like Angular and AdonisJs. Additionally, I've worked with CMS platforms such as WordPress and Shopify, as well as relational databases like MySQL and SQLite. As a digital native, I can quickly gather and learn information online and recently, I've been utilizing AI to achieve the same purpose in an even faster pace.",
+      "I am primarily skilled in React, particularly within the MERN stack, but my work experience also extends to frameworks like Angular and AdonisJs. While my previous work focused on non-relational databases, I am well-versed in relational databases and prefer to use them in various side projects.",
   },
   portfolio: {
     tag: "portfolio",
@@ -21,7 +23,7 @@ const CONTENTOBJ = {
   contact: {
     tag: "contact",
     title: "Let's get in touch!",
-    subtitle: "I’m open to any interesting opportunity, let’s get in touch!",
+    subtitle: `I’m open to any interesting opportunity, let’s get in touch! You may reach out to me through email: ${email} or phone ${phone}`,
   },
 };
 
