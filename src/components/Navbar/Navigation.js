@@ -35,7 +35,6 @@ const Navigation = props => {
       </div>
       <div className={classes.menu}>
         {Object.entries(refs)
-          .reverse()
           .map(([name, ref], key) => (
             <button
               className={classes.link}
@@ -71,7 +70,6 @@ const Navigation = props => {
           }
         >
           {Object.entries(refs)
-            .reverse()
             .map(([name, ref], key) => (
               <button
                 className={classes.link}

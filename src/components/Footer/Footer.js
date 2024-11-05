@@ -13,7 +13,6 @@ const Footer = props => {
       <div className={classes.nav}>
         <div className={classes.links}>
           {Object.entries(refs)
-            .reverse()
             .map(([name, ref], key) => (
               <button
                 className={classes.link}
