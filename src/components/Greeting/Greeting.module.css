@@ -1,3 +1,9 @@
+.icon {
+  width: 2rem;
+  height: 2rem;
+  filter: brightness(0) invert(0);
+}
+
 .greeting {
   grid-area: greeting;
   display: flex;
@@ -55,6 +61,32 @@
   border-top: var(--border-width) solid var(--border-color);
   grid-area: third;
   padding: 1rem;
+}
+
+.socials {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.social label {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.social:hover {
+  transform: scale(1.2);
 }
 
 /* Media Query for mobile devices */

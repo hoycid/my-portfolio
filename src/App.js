@@ -95,17 +95,21 @@ function App() {
     };
   }, []);
 
+  const excludedKeys = [
+    "github",
+    "vercel",
+    "linkedin",
+    "newtab",
+    "menu",
+    "close",
+  ];
+
   const knownTechIcons = Object.entries(icons)
-    .filter(
-      ([key]) =>
-        key !== "github" &&
-        key !== "vercel" &&
-        key !== "linkedin" &&
-        key !== "newtab" &&
-        key !== "menu" &&
-        key !== "close"
-    )
-    .map(([, value]) => value);
+    .filter(([key]) => !excludedKeys.includes(key))
+    .reduce((acc, [key, value]) => {
+      acc[key] = value;
+      return acc;
+    }, {});
 
   return (
     <>
@@ -118,6 +122,8 @@ function App() {
         >
           <Greeting
             greeting={content.greeting.salut}
+            socials={socials}
+            email={email}
             intro={content.greeting.intro}
             first={content.greeting.first}
             second={content.greeting.second}
