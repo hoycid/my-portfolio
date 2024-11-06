@@ -23,8 +23,10 @@
     "title links"
     "desc desc"
     "tech tech";
-  padding: 2rem;
   gap: 2rem;
+  padding: 2rem;
+  padding-left: 12vw;
+  margin-right: 12vw;
   padding-bottom: 3rem;
   margin-bottom: 3rem;
   opacity: 0; /* Start hidden */
