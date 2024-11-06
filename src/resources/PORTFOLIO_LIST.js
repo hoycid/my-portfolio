@@ -43,7 +43,7 @@ const PORTFOLIO_LIST = [
     title: "Muzic Landing Page",
     image: images.muzic,
     description:
-      "This is a landing page for Muzic, a music learning center owned by the family of a good friend of mine from my hometown. The design emphasises a professional and welcoming atmosphere, aimed at attracting students who are eager to explore their musical talents. With intuitive navigation and a clean layout, the landing page effectively connects aspiring musicians with valuable resources and information about the center’s offerings. The site is built with React and follows a component-based architecture.",
+      "This is a landing page for Muzic, a music learning centre owned by the family of a good friend of mine from my hometown. The design emphasises a professional and welcoming atmosphere, aimed at attracting students who are eager to explore their musical talents. With intuitive navigation and a clean layout, the landing page effectively connects aspiring musicians with valuable resources and information about the centre's offerings. The site is built with React and follows a component-based architecture.",
     technology: {
       javascript: icons.js,
       react: icons.react,
