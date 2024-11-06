@@ -154,7 +154,7 @@ function App() {
 
         <section
           ref={portfolioSection}
-          className={`${classes["projects"]} ${classes["fade-in"]}`}
+          className={`${classes["projects"]}`}
           aria-labelledby="portfolio"
         >
           <Panel id="portfolio" tag={content.portfolio.tag}>
