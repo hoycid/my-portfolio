@@ -15,7 +15,7 @@ const CONTENTOBJ = {
     tag: "about",
     title: "Creating modern web applications with React",
     subtitle:
-      "I am primarily skilled in React, particularly within the MERN stack, but my work experience also extends to frameworks like Angular and AdonisJs. While my previous work focused on non-relational databases, I am well-versed in relational databases and prefer to use them in various side projects.",
+      "I am primarily skilled in React, particularly within the MERN stack, but my work experience also extends to frameworks like NextJs, Angular, and AdonisJs. While my previous work focused on non-relational databases specifically MongoDB, I am well-versed in relational databases such as MySQL and SQLite.",
   },
   portfolio: {
     tag: "portfolio",
