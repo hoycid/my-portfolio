@@ -4,6 +4,7 @@ import pagro from "../assets/images/pagro.webp";
 import muzic from "../assets/images/muzic.webp";
 import fashion from "../assets/images/soulsfashion.webp";
 import er from "../assets/images/er-character-planner.webp";
+import btcspiral from "../assets/images/btcspiral.webp";
 
 import github from "../assets/images/github.svg";
 import linkedin from "../assets/images/linkedin.svg";
@@ -29,6 +30,7 @@ export const images = {
   muzic: muzic,
   er: er,
   fashion: fashion,
+  btcspiral: btcspiral
 };
 
 export const icons = {

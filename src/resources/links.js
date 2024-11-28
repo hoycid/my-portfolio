@@ -10,6 +10,7 @@ const links = {
   erGithub: "https://github.com/hoycid/er-character-planner",
   fashion: "https://souls.fashion/eldenring",
   fashionGithub: "https://github.com/hoycid/souls-fashion/tree/main",
+  btcspiral: "https://bitcoin-spiral.vercel.app/",
 };
 
 export default links;

@@ -4,6 +4,18 @@ import { icons } from "./images";
 
 const PORTFOLIO_LIST = [
   {
+    title: "Bitcoin Spiral Visualisation",
+    image: images.btcspiral,
+    description:
+      "This project is a simple yet engaging visualization of the Bitcoin cycle, which operates on a 4-year pattern. A dynamic bar moves around a Bitcoin graphic, gradually progressing each day toward the end of the cycle. Once it reaches the last year, the cycle resets, offering a clear and intuitive representation of Bitcoin’s recurring cycle. The project displays key details, including the current BTC price, percentage increase, and days remaining until the end of the cycle. It pulls real-time data for the cycle dates from an API, while also integrating live market information through widgets from CoinGecko’s API..",
+    technology: {
+      javascript: icons.js,
+      react: icons.react,
+    },
+    link: links.btcspiral,
+    github: links.btcspiral,
+  },
+  {
     title: "Souls Fashion",
     image: images.fashion,
     description:
