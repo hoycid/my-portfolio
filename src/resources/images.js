@@ -38,7 +38,7 @@ export const icons = {
   python: python,
   html: html,
   css: css,
-  js: js,
+  javascript: js,
   typescript: typescript,
   react: react,
   nextjs: nextjs,
