@@ -15,6 +15,7 @@ import nodejs from "../assets/images/nodejs.svg";
 import nextjs from "../assets/images/nextjs.svg";
 import react from "../assets/images/react.svg";
 import js from "../assets/images/js.svg";
+import mysql from "../assets/images/mysql.svg";
 import sqlite from "../assets/images/sqlite.svg";
 import mongodb from "../assets/images/mongodb.svg";
 import newtab from "../assets/images/newtab.svg";
@@ -44,6 +45,7 @@ export const icons = {
   nextjs: nextjs,
   nodejs: nodejs,
   express: express,
+  mysql: mysql,
   sqlite: sqlite,
   mongodb: mongodb,
   github: github,
