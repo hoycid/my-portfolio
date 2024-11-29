@@ -22,6 +22,7 @@ import express from "../assets/images/express.svg";
 import python from "../assets/images/python.svg";
 import menu from "../assets/images/menu.svg";
 import close from "../assets/images/close.svg";
+import typescript from "../assets/images/typescript.svg"
 
 export const images = {
   foodorder: foodorder,
@@ -34,22 +35,23 @@ export const images = {
 };
 
 export const icons = {
-  github: github,
-  linkedin: linkedin,
-  vercel: vercel,
-  css: css,
+  python: python,
   html: html,
-  nodejs: nodejs,
-  nextjs: nextjs,
+  css: css,
+  js: js,
+  typescript: typescript,
   react: react,
+  nextjs: nextjs,
+  nodejs: nodejs,
+  express: express,
   sqlite: sqlite,
   mongodb: mongodb,
-  newtab: newtab,
-  js: js,
-  express: express,
-  python: python,
+  github: github,
+  vercel: vercel,
+  linkedin: linkedin,
   menu: menu,
   close: close,
+  newtab: newtab,
 };
 
 export default images;
