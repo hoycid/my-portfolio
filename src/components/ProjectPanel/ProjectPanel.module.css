@@ -20,33 +20,34 @@
   grid-template-rows: auto;
   grid-template-areas:
     "title image"
-    "title links"
+    "none links"
     "desc desc"
     "tech tech";
-  gap: 2rem;
-  padding: 2rem;
-  padding-left: 12vw;
-  margin-right: 12vw;
-  padding-bottom: 3rem;
-  margin-bottom: 3rem;
+  gap: 1.5rem;
+  margin: 5rem;
+  margin-left: 10vw;
+  margin-right: 10vw;
   opacity: 0; /* Start hidden */
   transition: opacity 0.6s ease;
+}
+
+.container:hover {
+  transform: scale(1.07);
 }
 
 .container h1:hover,
 .container h2:hover,
 .container h3:hover,
 .container p:hover {
-  transform: scale(1.02);
+  /* transform: scale(1.02); */
+  transform: scale(1);
 }
 
 .title {
   grid-area: title;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  text-align: left;
+  justify-content: center;
 }
 
 .title h3 {
@@ -63,14 +64,12 @@
 .image {
   grid-area: image;
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: auto;
-  border: 1px solid black;
-  border-radius: 1rem;
+  border: var(--border-width) solid var(--border-color);
+  border-radius: 0.25rem;
   transition: transform 0.3s ease;
-  box-shadow: 1rem 1rem 0.75rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0.75rem 0.75rem 0.4rem rgba(0, 0, 0, 0.2);
 }
 
 .image:hover {
@@ -148,12 +147,12 @@
   .container {
     grid-template-columns: 1fr; /* Switch to a single-column layout */
     grid-template-areas:
-      "title"
       "image"
-      "tech"
+      "title"
+      "links"
       "desc"
-      "links";
-    padding: 1rem; /* Reduce padding */
+      "tech";
+    margin: 0.5rem; /* Reduce padding */
     margin-bottom: 5rem; /* Reduce bottom margin */
   }
 
@@ -163,7 +162,7 @@
   }
 
   .title h3 {
-    font-size: 2.2rem; /* Smaller font size for headers */
+    font-size: 1.8rem; /* Smaller font size for headers */
     margin: 0;
   }
 
