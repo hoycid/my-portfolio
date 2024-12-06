@@ -16,7 +16,7 @@ const PORTFOLIO_LIST = [
     github: links.btcspiral,
   },
   {
-    title: "Souls Fashion",
+    title: "Fashion Souls",
     image: images.fashion,
     description:
       "Fashion Souls is an interactive fashion tool for the SoulsBorne community, developed by Psyopgirl. As a contributing front-end developer and designer, I developed a UI overhaul for the site with a focus on instinctive user experience and UI/UX principles. The project utilized vanilla JavaScript for the interface, while Python managed image and file processing on the back end. On top of contributing further bugfixes, the creator and I are currently working on further developments, with features such as an outfit system on the way. The site has received a fantastic response, averaging about 30,000 visits daily, which speaks volumes about its utility and popularity among fans.",
