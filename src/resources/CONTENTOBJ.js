@@ -5,17 +5,17 @@ const CONTENTOBJ = {
     salut: "Hello there!",
     intro: "I'm Cid",
     first:
-      "I'm a web developer with an emphasis on front-end development using modern web frameworks and libaries.",
+      "Web development background with an emphasis on front-end development using modern web frameworks and libaries.",
     second:
-      "Currently, I am focused on developing a strong full-stack skill set to enhance my creative capabilities.",
+      "Skilled in building low-code applications using Power Apps and PowerAutomate.",
     third:
-      "Since 2023, I have lived in Auckland, New Zealand, where I moved to pursue a postgraduate degree in Information Technology.",
+      "Skilled in troubleshooting hardware, software, and network issues to ensure system reliability.",
   },
   about: {
     tag: "about",
-    title: "Creating modern web applications with React",
+    title: "Creating modern web applications and business solutions",
     subtitle:
-      "I am primarily skilled in React, particularly within the MERN stack or adjacent stacks, but my work experience also extends to frameworks like Next.js, Angular, and Adonis.js. While my previous work focused on non-relational databases specifically MongoDB, I am well-versed in relational databases such as MySQL and SQLite.",
+      "I build practical digital solutions by combining web app development, process automation, and technical support. My toolkit includes web technologies such as React and related frameworks like Next.js. I work with both non-relational and relational databases, including MongoDB, MySQL, and SQLite. Alongside custom development, I design low-code solutions using Microsoft Power Apps and Power Automate to automate workflows, streamline internal processes, and deliver efficient business tools. I also troubleshoot hardware, software, and network issues, helping maintain reliable systems and ensuring technology supports day-to-day operations effectively.",
   },
   portfolio: {
     tag: "portfolio",
