@@ -2,7 +2,7 @@ import { icons } from "./images";
 
 export const email = "quilangcidrex@gmail.com";
 
-export const phone = "0225845939";
+export const phone = "0524607752";
 
 export const socials = {
   github: {
