@@ -9,6 +9,7 @@ import content from "./resources/CONTENTOBJ";
 import { socials } from "./resources/socials";
 import { icons } from "./resources/images";
 import { email } from "./resources/socials";
+import { location } from "./resources/socials";
 
 import Navigation from "./components/Navbar/Navigation";
 import ProjectPanel from "./components/ProjectPanel/ProjectPanel";
