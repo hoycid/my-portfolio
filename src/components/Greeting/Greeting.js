@@ -8,6 +8,7 @@ const Greeting = props => {
   const third = props.third;
   const socials = props.socials;
   const email = props.email;
+  const location = props.location;
 
   return (
     <div className={classes["greeting"]}>
@@ -15,6 +16,7 @@ const Greeting = props => {
       <h1>{intro}</h1>
       <div className={classes.socials}>
         <p className={classes.social}>{email}</p>
+        <p className={classes.social}>{location}</p>
         {Object.entries(socials)
           .reverse()
           .map(([key, social]) => (

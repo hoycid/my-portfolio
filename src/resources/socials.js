@@ -2,6 +2,8 @@ import { icons } from "./images";
 
 export const email = "quilangcidrex@gmail.com";
 
+export const location = "Dubai, UAE";
+
 export const phone = "0524607752";
 
 export const socials = {

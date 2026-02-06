@@ -124,6 +124,7 @@ function App() {
             greeting={content.greeting.salut}
             socials={socials}
             email={email}
+            location={location}
             intro={content.greeting.intro}
             first={content.greeting.first}
             second={content.greeting.second}
@@ -183,7 +184,7 @@ function App() {
             title={content.contact.title}
             subtitle={content.contact.subtitle}
           >
-            <Contact email={email} socials={socials} />
+            <Contact email={email}  socials={socials} />
           </Section>
         </section>
 
