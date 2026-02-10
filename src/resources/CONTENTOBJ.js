@@ -15,7 +15,7 @@ const CONTENTOBJ = {
     tag: "about",
     title: "Building efficient automation solutions to reduce manual workload.",
     subtitle:
-      "I build practical digital solutions by combining process automation and web application development. My toolkit includes web technologies like React and Next.js, and I work with both relational and non-relational databases such as MySQL, SQLite, and MongoDB. I design low-code solutions using Microsoft Power Apps and Power Automate to automate workflows, streamline processes, and deliver efficient business tools.",
+      "I specialize in building automation-driven solutions that streamline business processes, reduce manual effort, and improve operational efficiency. I design and implement low-code workflows using Microsoft Power Apps and Power Automate to automate approvals, calculations, data handling, and routine tasks I support these solutions with custom web applications where needed to extend functionality and ensure scalable, reliable business systems.",
   },
   portfolio: {
     tag: "projects",
