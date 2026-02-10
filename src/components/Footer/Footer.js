@@ -50,7 +50,7 @@ const Footer = props => {
         <button onClick={scrollToTop} className={classes.scrollTo}>
           back to top
         </button>
-        <p>Cidrex Quilang. All pies reserved {currentYear}.</p>
+        <p>© {currentYear} Cidrex Quilang. All rights reserved.</p>
       </div>
     </div>
   );
